@@ -1,0 +1,72 @@
+/* Tooltip Styles */
+.tooltip {
+    position: absolute;
+    background-color: #2b2e34; /* Charcoal Gray */
+    color: #ffffff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 5px 5px;
+    border-style: solid;
+    border-color: transparent transparent #2b2e34 transparent;
+}
+
+.tooltip.show {
+    opacity: 1;
+}
+
+/* Tooltip positions */
+.tooltip.top {
+    bottom: calc(100% + 10px);
+}
+
+.tooltip.top::before {
+    top: auto;
+    bottom: -5px;
+    border-width: 5px 5px 0;
+    border-color: #2b2e34 transparent transparent transparent;
+}
+
+.tooltip.right {
+    left: calc(100% + 10px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tooltip.right::before {
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 5px 5px 5px 0;
+    border-color: transparent #2b2e34 transparent transparent;
+}
+
+.tooltip.left {
+    right: calc(100% + 10px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tooltip.left::before {
+    right: -5px;
+    left: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 5px 0 5px 5px;
+    border-color: transparent transparent transparent #2b2e34;
+}
+

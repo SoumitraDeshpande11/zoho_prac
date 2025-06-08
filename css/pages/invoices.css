@@ -1,0 +1,120 @@
+/* Invoices Page Styles */
+.invoices-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.invoices-views {
+    display: flex;
+    gap: 10px;
+}
+
+.invoices-view-button {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #3e4a59; /* Muted Dark */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.invoices-view-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.invoices-view-button.active {
+    color: #f0433d; /* Red Accent */
+    font-weight: 500;
+    border-bottom: 2px solid #f0433d;
+}
+
+.invoices-table-container {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.invoices-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.invoices-table th,
+.invoices-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.invoices-table th {
+    background-color: #f8f9fa;
+    font-weight: 500;
+    color: #3e4a59; /* Muted Dark */
+}
+
+.invoices-table tbody tr:hover {
+    background-color: #f4f5f7; /* Background Light */
+}
+
+.invoices-table a {
+    color: #007bff; /* Primary Blue */
+    text-decoration: none;
+}
+
+.invoices-table a:hover {
+    text-decoration: underline;
+}
+
+.checkbox-column {
+    width: 40px;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.badge-pending {
+    background-color: #ffeeba;
+    color: #856404;
+}
+
+.badge-paid {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.badge-overdue {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.invoices-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.invoices-pagination-info {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.invoices-pagination-actions {
+    display: flex;
+    gap: 5px;
+}
+

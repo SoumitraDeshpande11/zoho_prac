@@ -1,0 +1,150 @@
+/* Meetings Page Styles */
+.meetings-view-toggle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.meetings-view-toggle .meetings-view-button {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #3e4a59; /* Muted Dark */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.meetings-view-toggle .meetings-view-button:hover {
+    background-color: #f4f5f7;
+}
+
+.meetings-view-toggle .meetings-view-button.active {
+    background-color: #f0433d; /* Red Accent */
+    color: #ffffff;
+    border-color: #f0433d;
+}
+
+.meetings-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.meetings-views {
+    display: flex;
+    gap: 10px;
+}
+
+.meetings-views .meetings-view-button {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #3e4a59; /* Muted Dark */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.meetings-views .meetings-view-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.meetings-views .meetings-view-button.active {
+    color: #f0433d; /* Red Accent */
+    font-weight: 500;
+    border-bottom: 2px solid #f0433d;
+}
+
+.meetings-table-container {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.meetings-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.meetings-table th,
+.meetings-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.meetings-table th {
+    background-color: #f8f9fa;
+    font-weight: 500;
+    color: #3e4a59; /* Muted Dark */
+}
+
+.meetings-table tbody tr:hover {
+    background-color: #f4f5f7; /* Background Light */
+}
+
+.meetings-table a {
+    color: #007bff; /* Primary Blue */
+    text-decoration: none;
+}
+
+.meetings-table a:hover {
+    text-decoration: underline;
+}
+
+.checkbox-column {
+    width: 40px;
+    text-align: center;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.status-planned {
+    background-color: #e6f7ff;
+    color: #0070cc;
+}
+
+.status-held {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-not-held {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.meetings-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.meetings-pagination-info {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.meetings-pagination-actions {
+    display: flex;
+    gap: 5px;
+}
+

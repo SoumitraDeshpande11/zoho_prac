@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounts - Zoho CRM Clone</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/layout-fix.css">
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/dropdown.css">
+    <link rel="stylesheet" href="../css/components/search.css">
+    <link rel="stylesheet" href="../css/components/sidebar.css">
+    <link rel="stylesheet" href="../css/components/topbar.css">
+    <link rel="stylesheet" href="../css/components/cards.css">
+    <link rel="stylesheet" href="../css/components/tables.css">
+    <link rel="stylesheet" href="../css/components/buttons.css">
+    <link rel="stylesheet" href="../css/components/forms.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/pages/accounts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar will be loaded here by JavaScript -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="https://www.zohowebstatic.com/sites/default/files/ogimage/crm-logo.png" alt="Zoho CRM Logo">
+                <span>Modules</span>
+            </div>
+            <div class="sidebar-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="sidebar-menu">
+                <ul class="sidebar-menu-items">
+                    <li class="sidebar-menu-item">
+                        <a href="../index.html">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="leads.html">
+                            <i class="fas fa-user-tie"></i>
+                            Leads
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="contacts.html">
+                            <i class="fas fa-address-book"></i>
+                            Contacts
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item active">
+                        <a href="accounts.html">
+                            <i class="fas fa-building"></i>
+                            Accounts
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="deals.html">
+                            <i class="fas fa-handshake"></i>
+                            Deals
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="tasks.html">
+                            <i class="fas fa-tasks"></i>
+                            Tasks
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="meetings.html">
+                            <i class="fas fa-calendar-alt"></i>
+                            Meetings
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="calls.html">
+                            <i class="fas fa-phone"></i>
+                            Calls
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="products.html">
+                            <i class="fas fa-box"></i>
+                            Products
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="quotes.html">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            Quotes
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="sales-orders.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            Sales Orders
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="purchase-orders.html">
+                            <i class="fas fa-truck"></i>
+                            Purchase Orders
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="invoices.html">
+                            <i class="fas fa-receipt"></i>
+                            Invoices
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="salesinbox.html">
+                            <i class="fas fa-inbox"></i>
+                            SalesInbox
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="campaigns.html">
+                            <i class="fas fa-bullhorn"></i>
+                            Campaigns
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="vendors.html">
+                            <i class="fas fa-store"></i>
+                            Vendors
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="price-books.html">
+                            <i class="fas fa-book"></i>
+                            Price Books
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="reports.html">
+                            <i class="fas fa-chart-bar"></i>
+                            Reports
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="dashboards.html">
+                            <i class="fas fa-tachometer-alt"></i>
+                            Dashboards
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="marketplace.html">
+                            <i class="fas fa-store-alt"></i>
+                            Marketplace
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-footer">
+                <div class="user-avatar">SD</div>
+                <div class="user-info">
+                    <div class="user-name">CRM Teamspace</div>
+                    <div class="user-role">Administrator</div>
+                </div>
+                <div class="dropdown-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Topbar -->
+            <header class="topbar">
+                <div class="topbar-left">
+                    <h1 class="topbar-title">Accounts</h1>
+                    <div class="topbar-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Create Account
+                        </button>
+                        <button class="btn btn-outline-secondary">
+                            <i class="fas fa-upload"></i> Import
+                        </button>
+                    </div>
+                </div>
+                <div class="topbar-right">
+                    <div class="topbar-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search Accounts">
+                    </div>
+                    <div class="topbar-icons">
+                        <div class="topbar-icon">
+                            <i class="fas fa-filter"></i>
+                        </div>
+                        <div class="topbar-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="content-wrapper">
+                <div class="accounts-filters">
+                    <div class="accounts-views">
+                        <button class="accounts-view-button active">All Accounts</button>
+                        <button class="accounts-view-button">My Accounts</button>
+                        <button class="accounts-view-button">Active Accounts</button>
+                        <button class="accounts-view-button">New This Month</button>
+                        <button class="accounts-view-button">Recently Modified</button>
+                    </div>
+                    <div class="accounts-actions">
+                        <button class="btn btn-sm btn-outline-secondary">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="accounts-table-container">
+                    <table class="accounts-table">
+                        <thead>
+                            <tr>
+                                <th class="checkbox-column">
+                                    <input type="checkbox">
+                                </th>
+                                <th>Account Name</th>
+                                <th>Website</th>
+                                <th>Phone</th>
+                                <th>Billing Country</th>
+                                <th>Account Type</th>
+                                <th>Industry</th>
+                                <th>Account Owner</th>
+                                <th>Created Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#">Acme Corporation</a></td>
+                                <td>www.acmecorp.com</td>
+                                <td>(555) 123-4567</td>
+                                <td>United States</td>
+                                <td>Customer</td>
+                                <td>Manufacturing</td>
+                                <td>Soumitra Deshpande</td>
+                                <td>06/01/2025 10:30 AM</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#">XYZ Industries</a></td>
+                                <td>www.xyzindustries.com</td>
+                                <td>(555) 987-6543</td>
+                                <td>Canada</td>
+                                <td>Customer</td>
+                                <td>Technology</td>
+                                <td>Soumitra Deshpande</td>
+                                <td>06/02/2025 09:15 AM</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#">Global Tech</a></td>
+                                <td>www.globaltech.com</td>
+                                <td>(555) 456-7890</td>
+                                <td>United Kingdom</td>
+                                <td>Partner</td>
+                                <td>Technology</td>
+                                <td>Soumitra Deshpande</td>
+                                <td>06/03/2025 02:30 PM</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#">Innovative Solutions</a></td>
+                                <td>www.innovative-solutions.com</td>
+                                <td>(555) 789-0123</td>
+                                <td>Australia</td>
+                                <td>Customer</td>
+                                <td>Consulting</td>
+                                <td>Soumitra Deshpande</td>
+                                <td>06/04/2025 11:45 AM</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#">Tech Innovators</a></td>
+                                <td>www.techinnovators.com</td>
+                                <td>(555) 234-5678</td>
+                                <td>Germany</td>
+                                <td>Prospect</td>
+                                <td>Software</td>
+                                <td>Soumitra Deshpande</td>
+                                <td>06/05/2025 09:00 AM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="accounts-pagination">
+                    <div class="accounts-pagination-info">
+                        Showing 1-5 of 10 records
+                    </div>
+                    <div class="accounts-pagination-actions">
+                        <button class="btn btn-sm btn-outline-secondary" disabled>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="btn btn-sm btn-outline-secondary">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="smart-chat">
+            Here is your Smart Chat (Ctrl+Space)
+        </div>
+        <div class="footer-actions">
+            <button class="footer-action-button">
+                <i class="fas fa-comment-alt"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-sync-alt"></i>
+            </button>
+            <button class="footer-action-button">
+                <span class="feedback-badge">Feedback on New UI</span>
+            </button>
+            <button class="footer-action-button">
+                Ask Zia
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-clipboard"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-bell"></i>
+                <span class="badge">1</span>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-question-circle"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+</html>
+

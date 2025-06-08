@@ -1,0 +1,62 @@
+{
+  "name": "zoho-crm-clone",
+  "version": "1.0.0",
+  "description": "A comprehensive CRM application clone inspired by Zoho CRM with modern web technologies",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server --port=3000 --open=/index.html",
+    "dev": "npx live-server --port=3000 --open=/index.html --watch=css,js,pages",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "npx clean-css-cli -o dist/styles.min.css css/**/*.css",
+    "minify-js": "npx terser js/**/*.js -o dist/scripts.min.js",
+    "lint": "npx eslint js/**/*.js",
+    "lint:fix": "npx eslint js/**/*.js --fix",
+    "test": "npx jest",
+    "test:watch": "npx jest --watch",
+    "validate-html": "npx html-validate *.html pages/*.html",
+    "optimize-images": "npx imagemin images/* --out-dir=dist/images",
+    "serve": "npx http-server -p 8080 -o",
+    "deploy": "npm run build && npm run validate-html"
+  },
+  "keywords": [
+    "crm",
+    "zoho",
+    "customer-relationship-management",
+    "business-software",
+    "dashboard",
+    "sales",
+    "leads",
+    "contacts"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/zoho-crm-clone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/zoho-crm-clone/issues"
+  },
+  "homepage": "https://yourusername.github.io/zoho-crm-clone",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "live-server": "^1.2.2",
+    "clean-css-cli": "^5.6.3",
+    "terser": "^5.27.0",
+    "html-validate": "^8.7.4",
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^8.0.0",
+    "http-server": "^14.1.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

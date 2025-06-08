@@ -1,0 +1,167 @@
+/* Topbar Styles */
+.topbar {
+    height: 60px;
+    background-color: #ffffff; /* White */
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 250px; /* Width of sidebar */
+    right: 0;
+    z-index: 99;
+}
+
+.topbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2b2e34; /* Charcoal Gray */
+    margin-right: 15px;
+}
+
+.topbar-actions {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-action-button {
+    background: none;
+    border: none;
+    color: #3e4a59; /* Muted Dark */
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.topbar-action-button:hover {
+    background-color: #f4f5f7; /* Background Light */
+}
+
+.topbar-action-button i {
+    margin-right: 5px;
+}
+
+.topbar-action-button.primary {
+    background-color: #007bff; /* Primary Blue */
+    color: #ffffff;
+}
+
+.topbar-action-button.primary:hover {
+    background-color: #0069d9;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-search {
+    position: relative;
+    margin-right: 15px;
+}
+
+.topbar-search input {
+    padding: 8px 10px 8px 30px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    width: 200px;
+    font-size: 14px;
+}
+
+.topbar-search i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3e4a59; /* Muted Dark */
+}
+
+.topbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3e4a59; /* Muted Dark */
+    margin-left: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.topbar-icon:hover {
+    background-color: #f4f5f7; /* Background Light */
+}
+
+.topbar-icon .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f0433d; /* Red Accent */
+    color: #ffffff;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar-user {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.topbar-user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #f0433d; /* Red Accent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.topbar-user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar-user-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2b2e34; /* Charcoal Gray */
+}
+
+.topbar-user-role {
+    font-size: 12px;
+    color: #3e4a59; /* Muted Dark */
+}
+
+.topbar-dropdown {
+    margin-left: 5px;
+    color: #3e4a59; /* Muted Dark */
+}
+

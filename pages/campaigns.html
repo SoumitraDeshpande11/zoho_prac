@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaigns - Zoho CRM Clone</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/layout-fix.css">
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/dropdown.css">
+    <link rel="stylesheet" href="../css/components/search.css">
+    <link rel="stylesheet" href="../css/components/sidebar.css">
+    <link rel="stylesheet" href="../css/components/topbar.css">
+    <link rel="stylesheet" href="../css/components/cards.css">
+    <link rel="stylesheet" href="../css/components/tables.css">
+    <link rel="stylesheet" href="../css/components/buttons.css">
+    <link rel="stylesheet" href="../css/components/forms.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/pages/campaigns.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar will be loaded here by JavaScript -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="https://www.zohowebstatic.com/sites/default/files/ogimage/crm-logo.png" alt="Zoho CRM Logo">
+                <span>Modules</span>
+            </div>
+            <div class="sidebar-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="sidebar-menu">
+                <ul class="sidebar-menu-items">
+                    <li class="sidebar-menu-item">
+                        <a href="../index.html">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="leads.html">
+                            <i class="fas fa-user-tie"></i>
+                            Leads
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="contacts.html">
+                            <i class="fas fa-address-book"></i>
+                            Contacts
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="accounts.html">
+                            <i class="fas fa-building"></i>
+                            Accounts
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="deals.html">
+                            <i class="fas fa-handshake"></i>
+                            Deals
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="quotes.html">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            Quotes
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="sales-orders.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            Sales Orders
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="invoices.html">
+                            <i class="fas fa-receipt"></i>
+                            Invoices
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="tasks.html">
+                            <i class="fas fa-tasks"></i>
+                            Tasks
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="meetings.html">
+                            <i class="fas fa-calendar-alt"></i>
+                            Meetings
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="calls.html">
+                            <i class="fas fa-phone"></i>
+                            Calls
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="events.html">
+                            <i class="fas fa-calendar-check"></i>
+                            Events
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="products.html">
+                            <i class="fas fa-box"></i>
+                            Products
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="price-books.html">
+                            <i class="fas fa-book"></i>
+                            Price Books
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="vendors.html">
+                            <i class="fas fa-store"></i>
+                            Vendors
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item active">
+                        <a href="campaigns.html">
+                            <i class="fas fa-bullhorn"></i>
+                            Campaigns
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="cases.html">
+                            <i class="fas fa-life-ring"></i>
+                            Cases
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="solutions.html">
+                            <i class="fas fa-lightbulb"></i>
+                            Solutions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-footer">
+                <div class="user-avatar">SD</div>
+                <div class="user-info">
+                    <div class="user-name">CRM Teamspace</div>
+                    <div class="user-role">Administrator</div>
+                </div>
+                <div class="dropdown-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Topbar -->
+            <header class="topbar">
+                <div class="topbar-left">
+                    <h1 class="topbar-title">Campaigns</h1>
+                    <div class="topbar-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Create Campaign
+                        </button>
+                        <button class="btn btn-outline-secondary">
+                            <i class="fas fa-upload"></i> Import
+                        </button>
+                    </div>
+                </div>
+                <div class="topbar-right">
+                    <div class="topbar-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search Campaigns">
+                    </div>
+                    <div class="topbar-icons">
+                        <div class="topbar-icon">
+                            <i class="fas fa-filter"></i>
+                        </div>
+                        <div class="topbar-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="content-wrapper">
+                <div class="campaigns-filters">
+                    <div class="campaigns-views">
+                        <button class="campaigns-view-button active">All Campaigns</button>
+                        <button class="campaigns-view-button">My Campaigns</button>
+                        <button class="campaigns-view-button">Active Campaigns</button>
+                        <button class="campaigns-view-button">Completed Campaigns</button>
+                        <button class="campaigns-view-button">Planned Campaigns</button>
+                    </div>
+                    <div class="campaigns-actions">
+                        <select class="form-select">
+                            <option>All Types</option>
+                            <option>Email Marketing</option>
+                            <option>Social Media</option>
+                            <option>Web Banners</option>
+                            <option>Print Ads</option>
+                            <option>Events</option>
+                        </select>
+                        <button class="btn btn-sm btn-outline-secondary">
+                            <i class="fas fa-download"></i> Export
+                        </button>
+                        <button class="btn btn-sm btn-outline-secondary">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="campaigns-table-container">
+                    <table class="campaigns-table">
+                        <thead>
+                            <tr>
+                                <th class="checkbox-column">
+                                    <input type="checkbox">
+                                </th>
+                                <th>Campaign Name</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Budget</th>
+                                <th>Expected Revenue</th>
+                                <th>Actual Cost</th>
+                                <th>Response Rate</th>
+                                <th>Owner</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#" class="campaign-link">Q1 Product Launch Campaign</a></td>
+                                <td><span class="campaign-type email">Email Marketing</span></td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>Jan 01, 2025</td>
+                                <td>Mar 31, 2025</td>
+                                <td>$50,000.00</td>
+                                <td>$500,000.00</td>
+                                <td>$35,750.00</td>
+                                <td><span class="response-rate good">12.5%</span></td>
+                                <td>John Smith</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-success">
+                                            <i class="fas fa-chart-bar"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#" class="campaign-link">Holiday Season Promotion</a></td>
+                                <td><span class="campaign-type social">Social Media</span></td>
+                                <td><span class="badge badge-info">Completed</span></td>
+                                <td>Nov 15, 2024</td>
+                                <td>Jan 15, 2025</td>
+                                <td>$30,000.00</td>
+                                <td>$300,000.00</td>
+                                <td>$28,500.00</td>
+                                <td><span class="response-rate excellent">18.3%</span></td>
+                                <td>Sarah Johnson</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-success">
+                                            <i class="fas fa-chart-bar"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#" class="campaign-link">Spring Trade Show Participation</a></td>
+                                <td><span class="campaign-type event">Events</span></td>
+                                <td><span class="badge badge-warning">Planning</span></td>
+                                <td>Apr 01, 2025</td>
+                                <td>Apr 30, 2025</td>
+                                <td>$75,000.00</td>
+                                <td>$750,000.00</td>
+                                <td>$0.00</td>
+                                <td><span class="response-rate na">N/A</span></td>
+                                <td>Mike Wilson</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-success">
+                                            <i class="fas fa-chart-bar"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#" class="campaign-link">Customer Retention Program</a></td>
+                                <td><span class="campaign-type web">Web Banners</span></td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>Feb 01, 2025</td>
+                                <td>May 31, 2025</td>
+                                <td>$25,000.00</td>
+                                <td>$250,000.00</td>
+                                <td>$12,300.00</td>
+                                <td><span class="response-rate average">8.7%</span></td>
+                                <td>Emily Davis</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-success">
+                                            <i class="fas fa-chart-bar"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#" class="campaign-link">B2B Lead Generation Drive</a></td>
+                                <td><span class="campaign-type print">Print Ads</span></td>
+                                <td><span class="badge badge-secondary">Draft</span></td>
+                                <td>Jun 01, 2025</td>
+                                <td>Aug 31, 2025</td>
+                                <td>$40,000.00</td>
+                                <td>$400,000.00</td>
+                                <td>$0.00</td>
+                                <td><span class="response-rate na">N/A</span></td>
+                                <td>David Brown</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-success">
+                                            <i class="fas fa-chart-bar"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pagination-container">
+                    <div class="pagination-info">
+                        Showing 1-5 of 18 campaigns
+                    </div>
+                    <div class="pagination">
+                        <button class="pagination-btn" disabled>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="pagination-btn active">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn">3</button>
+                        <button class="pagination-btn">4</button>
+                        <button class="pagination-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Zoho CRM Clone. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/script.js"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+</html>

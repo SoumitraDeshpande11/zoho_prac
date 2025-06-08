@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - Zoho CRM Clone</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/layout-fix.css">
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/dropdown.css">
+    <link rel="stylesheet" href="../css/components/search.css">
+    <link rel="stylesheet" href="../css/components/sidebar.css">
+    <link rel="stylesheet" href="../css/components/topbar.css">
+    <link rel="stylesheet" href="../css/components/cards.css">
+    <link rel="stylesheet" href="../css/components/tables.css">
+    <link rel="stylesheet" href="../css/components/buttons.css">
+    <link rel="stylesheet" href="../css/components/forms.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/pages/reports.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar will be loaded here by JavaScript -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="https://www.zohowebstatic.com/sites/default/files/ogimage/crm-logo.png" alt="Zoho CRM Logo">
+                <span>Reports</span>
+            </div>
+            <div class="sidebar-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search Folder">
+            </div>
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-section">
+                    <div class="sidebar-menu-header">
+                        Folders
+                    </div>
+                    <ul class="sidebar-menu-items">
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fas fa-folder"></i>
+                                All Reports
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item active">
+                            <a href="#">
+                                <i class="fas fa-folder"></i>
+                                My Reports
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fas fa-star"></i>
+                                Favorites
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fas fa-history"></i>
+                                Recently Viewed
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fas fa-calendar"></i>
+                                Scheduled Reports
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fas fa-trash"></i>
+                                Recently Deleted
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fas fa-address-card"></i>
+                                Account and Contact Reports
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fas fa-handshake"></i>
+                                Deal Reports
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fas fa-user-tie"></i>
+                                Lead Reports
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fas fa-bullhorn"></i>
+                                Campaign Reports
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fas fa-tools"></i>
+                                Case and Solution Reports
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fas fa-box"></i>
+                                Product Reports
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fas fa-store"></i>
+                                Vendor Reports
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fas fa-file-invoice-dollar"></i>
+                                Quote Reports
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fas fa-shopping-cart"></i>
+                                Sales Order Reports
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fas fa-truck"></i>
+                                Purchase Order Reports
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar-footer">
+                <div class="user-avatar">SD</div>
+                <div class="user-info">
+                    <div class="user-name">CRM Teamspace</div>
+                    <div class="user-role">Administrator</div>
+                </div>
+                <div class="dropdown-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Topbar -->
+            <header class="topbar">
+                <div class="topbar-left">
+                    <h1 class="topbar-title">My Reports</h1>
+                    <div class="topbar-actions">
+                        <button class="topbar-action-button">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="topbar-right">
+                    <div class="topbar-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search My Reports">
+                    </div>
+                    <div class="analytics-badge">
+                        Advanced Analytics for Zoho CRM
+                        <span>powered by Zoho Analytics</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="content-wrapper">
+                <div class="reports-table-container">
+                    <table class="reports-table">
+                        <thead>
+                            <tr>
+                                <th>Report Name</th>
+                                <th>Description</th>
+                                <th>Folder</th>
+                                <th>Last Accessed Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Empty state -->
+                        </tbody>
+                    </table>
+                    <div class="reports-empty-state">
+                        <div class="reports-empty-message">No Reports found</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="smart-chat">
+            Here is your Smart Chat (Ctrl+Space)
+        </div>
+        <div class="footer-actions">
+            <button class="footer-action-button">
+                <i class="fas fa-comment-alt"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-sync-alt"></i>
+            </button>
+            <button class="footer-action-button">
+                <span class="feedback-badge">Feedback on New UI</span>
+            </button>
+            <button class="footer-action-button">
+                Ask Zia
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-clipboard"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-bell"></i>
+                <span class="badge">1</span>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-question-circle"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+</html>
+

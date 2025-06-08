@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks - Zoho CRM Clone</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/layout-fix.css">
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/dropdown.css">
+    <link rel="stylesheet" href="../css/components/search.css">
+    <link rel="stylesheet" href="../css/components/sidebar.css">
+    <link rel="stylesheet" href="../css/components/topbar.css">
+    <link rel="stylesheet" href="../css/components/cards.css">
+    <link rel="stylesheet" href="../css/components/tables.css">
+    <link rel="stylesheet" href="../css/components/buttons.css">
+    <link rel="stylesheet" href="../css/components/forms.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/components/tooltips.css">
+    <link rel="stylesheet" href="../css/components/toasts.css">
+    <link rel="stylesheet" href="../css/components/modals.css">
+    <link rel="stylesheet" href="../css/pages/tasks.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar will be loaded here by JavaScript -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="https://www.zohowebstatic.com/sites/default/files/ogimage/crm-logo.png" alt="Zoho CRM Logo">
+                <span>Modules</span>
+            </div>
+            <div class="sidebar-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="sidebar-menu">
+                <ul class="sidebar-menu-items">
+                    <li class="sidebar-menu-item">
+                        <a href="../index.html">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="leads.html">
+                            <i class="fas fa-user-tie"></i>
+                            Leads
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="contacts.html">
+                            <i class="fas fa-address-book"></i>
+                            Contacts
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="accounts.html">
+                            <i class="fas fa-building"></i>
+                            Accounts
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="deals.html">
+                            <i class="fas fa-handshake"></i>
+                            Deals
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item active">
+                        <a href="tasks.html">
+                            <i class="fas fa-tasks"></i>
+                            Tasks
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="meetings.html">
+                            <i class="fas fa-calendar-alt"></i>
+                            Meetings
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="calls.html">
+                            <i class="fas fa-phone"></i>
+                            Calls
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="products.html">
+                            <i class="fas fa-box"></i>
+                            Products
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="quotes.html">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            Quotes
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="sales-orders.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            Sales Orders
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="purchase-orders.html">
+                            <i class="fas fa-truck"></i>
+                            Purchase Orders
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="invoices.html">
+                            <i class="fas fa-receipt"></i>
+                            Invoices
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="salesinbox.html">
+                            <i class="fas fa-inbox"></i>
+                            SalesInbox
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="campaigns.html">
+                            <i class="fas fa-bullhorn"></i>
+                            Campaigns
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="vendors.html">
+                            <i class="fas fa-store"></i>
+                            Vendors
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="price-books.html">
+                            <i class="fas fa-book"></i>
+                            Price Books
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="reports.html">
+                            <i class="fas fa-chart-bar"></i>
+                            Reports
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="dashboards.html">
+                            <i class="fas fa-tachometer-alt"></i>
+                            Dashboards
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="marketplace.html">
+                            <i class="fas fa-store-alt"></i>
+                            Marketplace
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-footer">
+                <div class="user-avatar">SD</div>
+                <div class="user-info">
+                    <div class="user-name">CRM Teamspace</div>
+                    <div class="user-role">Administrator</div>
+                </div>
+                <div class="dropdown-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Topbar -->
+            <header class="topbar">
+                <div class="topbar-left">
+                    <h1 class="topbar-title">Tasks</h1>
+                    <div class="topbar-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Create Task
+                        </button>
+                        <button class="btn btn-outline-secondary">
+                            <i class="fas fa-upload"></i> Import
+                        </button>
+                    </div>
+                </div>
+                <div class="topbar-right">
+                    <div class="topbar-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search Tasks">
+                    </div>
+                    <div class="topbar-icons">
+                        <div class="topbar-icon">
+                            <i class="fas fa-filter"></i>
+                        </div>
+                        <div class="topbar-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="content-wrapper">
+                <div class="tasks-view-toggle">
+                    <button class="tasks-view-button active">
+                        <i class="fas fa-list"></i> List View
+                    </button>
+                    <button class="tasks-view-button">
+                        <i class="fas fa-calendar-alt"></i> Calendar View
+                    </button>
+                </div>
+
+                <div class="tasks-filters">
+                    <div class="tasks-views">
+                        <button class="tasks-view-button active">All Tasks</button>
+                        <button class="tasks-view-button">My Tasks</button>
+                        <button class="tasks-view-button">Today's Tasks</button>
+                        <button class="tasks-view-button">Overdue Tasks</button>
+                        <button class="tasks-view-button">Completed Tasks</button>
+                    </div>
+                    <div class="tasks-actions">
+                        <button class="btn btn-sm btn-outline-secondary">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="tasks-table-container">
+                    <table class="tasks-table">
+                        <thead>
+                            <tr>
+                                <th class="checkbox-column">
+                                    <input type="checkbox">
+                                </th>
+                                <th>Subject</th>
+                                <th>Due Date</th>
+                                <th>Status</th>
+                                <th>Priority</th>
+                                <th>Related To</th>
+                                <th>Owner</th>
+                                <th>Created Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#">Register for upcoming CRM Webinars</a></td>
+                                <td>03/06/2025</td>
+                                <td><span class="status-badge status-not-started">Not Started</span></td>
+                                <td><span class="priority-badge priority-low">Low</span></td>
+                                <td>Marketing Campaign</td>
+                                <td>Soumitra Deshpande</td>
+                                <td>06/01/2025</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#">Refer CRM Videos</a></td>
+                                <td>05/06/2025</td>
+                                <td><span class="status-badge status-in-progress">In Progress</span></td>
+                                <td><span class="priority-badge priority-normal">Normal</span></td>
+                                <td>Training</td>
+                                <td>Soumitra Deshpande</td>
+                                <td>06/01/2025</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#">Competitor Comparison Document</a></td>
+                                <td>01/06/2025</td>
+                                <td><span class="status-badge status-not-started">Not Started</span></td>
+                                <td><span class="priority-badge priority-highest">Highest</span></td>
+                                <td>Sales Strategy</td>
+                                <td>Soumitra Deshpande</td>
+                                <td>05/28/2025</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#">Get Approval from Manager</a></td>
+                                <td>02/06/2025</td>
+                                <td><span class="status-badge status-not-started">Not Started</span></td>
+                                <td><span class="priority-badge priority-low">Low</span></td>
+                                <td>Budget Proposal</td>
+                                <td>Soumitra Deshpande</td>
+                                <td>05/30/2025</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#">Get Approval for Budget</a></td>
+                                <td>04/06/2025</td>
+                                <td><span class="status-badge status-in-progress">In Progress</span></td>
+                                <td><span class="priority-badge priority-normal">Normal</span></td>
+                                <td>Q3 Planning</td>
+                                <td>Soumitra Deshpande</td>
+                                <td>06/01/2025</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="tasks-pagination">
+                    <div class="tasks-pagination-info">
+                        Showing 1-5 of 10 records
+                    </div>
+                    <div class="tasks-pagination-actions">
+                        <button class="btn btn-sm btn-outline-secondary" disabled>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="btn btn-sm btn-outline-secondary">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="smart-chat">
+            Here is your Smart Chat (Ctrl+Space)
+        </div>
+        <div class="footer-actions">
+            <button class="footer-action-button">
+                <i class="fas fa-comment-alt"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-sync-alt"></i>
+            </button>
+            <button class="footer-action-button">
+                <span class="feedback-badge">Feedback on New UI</span>
+            </button>
+            <button class="footer-action-button">
+                Ask Zia
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-clipboard"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-bell"></i>
+                <span class="badge">1</span>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-question-circle"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+</html>
+

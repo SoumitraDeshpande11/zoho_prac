@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Zoho CRM Clone</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/layout-fix.css">
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/dropdown.css">
+    <link rel="stylesheet" href="../css/components/search.css">
+    <link rel="stylesheet" href="../css/components/sidebar.css">
+    <link rel="stylesheet" href="../css/components/topbar.css">
+    <link rel="stylesheet" href="../css/components/cards.css">
+    <link rel="stylesheet" href="../css/components/tables.css">
+    <link rel="stylesheet" href="../css/components/buttons.css">
+    <link rel="stylesheet" href="../css/components/forms.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/pages/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar will be loaded here by JavaScript -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="https://www.zohowebstatic.com/sites/default/files/ogimage/crm-logo.png" alt="Zoho CRM Logo">
+                <span>Modules</span>
+            </div>
+            <div class="sidebar-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="sidebar-menu">
+                <ul class="sidebar-menu-items">
+                    <li class="sidebar-menu-item">
+                        <a href="../index.html">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="leads.html">
+                            <i class="fas fa-user-tie"></i>
+                            Leads
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="contacts.html">
+                            <i class="fas fa-address-book"></i>
+                            Contacts
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="accounts.html">
+                            <i class="fas fa-building"></i>
+                            Accounts
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="deals.html">
+                            <i class="fas fa-handshake"></i>
+                            Deals
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="quotes.html">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            Quotes
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="sales-orders.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            Sales Orders
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="invoices.html">
+                            <i class="fas fa-receipt"></i>
+                            Invoices
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="tasks.html">
+                            <i class="fas fa-tasks"></i>
+                            Tasks
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="meetings.html">
+                            <i class="fas fa-calendar-alt"></i>
+                            Meetings
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="calls.html">
+                            <i class="fas fa-phone"></i>
+                            Calls
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="events.html">
+                            <i class="fas fa-calendar-check"></i>
+                            Events
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item active">
+                        <a href="products.html">
+                            <i class="fas fa-box"></i>
+                            Products
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="price-books.html">
+                            <i class="fas fa-book"></i>
+                            Price Books
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="vendors.html">
+                            <i class="fas fa-store"></i>
+                            Vendors
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="campaigns.html">
+                            <i class="fas fa-bullhorn"></i>
+                            Campaigns
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="cases.html">
+                            <i class="fas fa-life-ring"></i>
+                            Cases
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="solutions.html">
+                            <i class="fas fa-lightbulb"></i>
+                            Solutions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-footer">
+                <div class="user-avatar">SD</div>
+                <div class="user-info">
+                    <div class="user-name">CRM Teamspace</div>
+                    <div class="user-role">Administrator</div>
+                </div>
+                <div class="dropdown-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Topbar -->
+            <header class="topbar">
+                <div class="topbar-left">
+                    <h1 class="topbar-title">Products</h1>
+                    <div class="topbar-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Add Product
+                        </button>
+                        <button class="btn btn-outline-secondary">
+                            <i class="fas fa-upload"></i> Import
+                        </button>
+                    </div>
+                </div>
+                <div class="topbar-right">
+                    <div class="topbar-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search Products">
+                    </div>
+                    <div class="topbar-icons">
+                        <div class="topbar-icon">
+                            <i class="fas fa-filter"></i>
+                        </div>
+                        <div class="topbar-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="content-wrapper">
+                <div class="products-filters">
+                    <div class="products-views">
+                        <button class="products-view-button active">All Products</button>
+                        <button class="products-view-button">Active Products</button>
+                        <button class="products-view-button">Inactive Products</button>
+                        <button class="products-view-button">Featured Products</button>
+                        <button class="products-view-button">Low Stock</button>
+                    </div>
+                    <div class="products-actions">
+                        <select class="form-select">
+                            <option>All Categories</option>
+                            <option>Software</option>
+                            <option>Hardware</option>
+                            <option>Services</option>
+                            <option>Accessories</option>
+                        </select>
+                        <button class="btn btn-sm btn-outline-secondary">
+                            <i class="fas fa-download"></i> Export
+                        </button>
+                        <button class="btn btn-sm btn-outline-secondary">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products-table-container">
+                    <table class="products-table">
+                        <thead>
+                            <tr>
+                                <th class="checkbox-column">
+                                    <input type="checkbox">
+                                </th>
+                                <th>Product Image</th>
+                                <th>Product Name</th>
+                                <th>Product Code</th>
+                                <th>Category</th>
+                                <th>Unit Price</th>
+                                <th>Stock</th>
+                                <th>Status</th>
+                                <th>Vendor</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/40x40?text=CRM" alt="CRM Software">
+                                    </div>
+                                </td>
+                                <td><a href="#" class="product-link">CRM Professional License</a></td>
+                                <td>CRM-PRO-001</td>
+                                <td><span class="category-tag">Software</span></td>
+                                <td>$299.00</td>
+                                <td><span class="stock-level high">500</span></td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>Tech Solutions Inc</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/40x40?text=LT" alt="Laptop">
+                                    </div>
+                                </td>
+                                <td><a href="#" class="product-link">Business Laptop Pro</a></td>
+                                <td>LAPTOP-BP-002</td>
+                                <td><span class="category-tag">Hardware</span></td>
+                                <td>$1,299.00</td>
+                                <td><span class="stock-level medium">25</span></td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>Hardware Corp</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/40x40?text=SV" alt="Support Service">
+                                    </div>
+                                </td>
+                                <td><a href="#" class="product-link">Premium Support Package</a></td>
+                                <td>SUPPORT-PREM-003</td>
+                                <td><span class="category-tag">Services</span></td>
+                                <td>$199.00</td>
+                                <td><span class="stock-level unlimited">∞</span></td>
+                                <td><span class="badge badge-success">Active</span></td>
+                                <td>Support Solutions Ltd</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/40x40?text=MS" alt="Mouse">
+                                    </div>
+                                </td>
+                                <td><a href="#" class="product-link">Wireless Ergonomic Mouse</a></td>
+                                <td>MOUSE-WE-004</td>
+                                <td><span class="category-tag">Accessories</span></td>
+                                <td>$49.99</td>
+                                <td><span class="stock-level low">5</span></td>
+                                <td><span class="badge badge-warning">Low Stock</span></td>
+                                <td>Accessories Plus</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td>
+                                    <div class="product-image">
+                                        <img src="https://via.placeholder.com/40x40?text=TR" alt="Training">
+                                    </div>
+                                </td>
+                                <td><a href="#" class="product-link">Advanced CRM Training Course</a></td>
+                                <td>TRAIN-ADV-005</td>
+                                <td><span class="category-tag">Services</span></td>
+                                <td>$499.00</td>
+                                <td><span class="stock-level unlimited">∞</span></td>
+                                <td><span class="badge badge-secondary">Inactive</span></td>
+                                <td>Training Institute</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pagination-container">
+                    <div class="pagination-info">
+                        Showing 1-5 of 47 products
+                    </div>
+                    <div class="pagination">
+                        <button class="pagination-btn" disabled>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="pagination-btn active">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn">3</button>
+                        <button class="pagination-btn">4</button>
+                        <button class="pagination-btn">5</button>
+                        <button class="pagination-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Zoho CRM Clone. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/script.js"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+</html>

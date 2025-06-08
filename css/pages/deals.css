@@ -1,0 +1,160 @@
+/* Deals Page Styles */
+.deals-view-toggle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.deals-view-toggle .deals-view-button {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #3e4a59; /* Muted Dark */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.deals-view-toggle .deals-view-button:hover {
+    background-color: #f4f5f7;
+}
+
+.deals-view-toggle .deals-view-button.active {
+    background-color: #f0433d; /* Red Accent */
+    color: #ffffff;
+    border-color: #f0433d;
+}
+
+.deals-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.deals-views {
+    display: flex;
+    gap: 10px;
+}
+
+.deals-views .deals-view-button {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #3e4a59; /* Muted Dark */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.deals-views .deals-view-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.deals-views .deals-view-button.active {
+    color: #f0433d; /* Red Accent */
+    font-weight: 500;
+    border-bottom: 2px solid #f0433d;
+}
+
+.deals-table-container {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.deals-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.deals-table th,
+.deals-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.deals-table th {
+    background-color: #f8f9fa;
+    font-weight: 500;
+    color: #3e4a59; /* Muted Dark */
+}
+
+.deals-table tbody tr:hover {
+    background-color: #f4f5f7; /* Background Light */
+}
+
+.deals-table a {
+    color: #007bff; /* Primary Blue */
+    text-decoration: none;
+}
+
+.deals-table a:hover {
+    text-decoration: underline;
+}
+
+.checkbox-column {
+    width: 40px;
+    text-align: center;
+}
+
+.stage-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.stage-qualification {
+    background-color: #e6f7ff;
+    color: #0070cc;
+}
+
+.stage-proposal {
+    background-color: #fff7e6;
+    color: #d46b08;
+}
+
+.stage-negotiation {
+    background-color: #f9f0ff;
+    color: #722ed1;
+}
+
+.stage-closed-won {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.stage-closed-lost {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.deals-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.deals-pagination-info {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.deals-pagination-actions {
+    display: flex;
+    gap: 5px;
+}
+

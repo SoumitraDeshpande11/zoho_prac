@@ -1,0 +1,120 @@
+/* Calls Page Styles */
+.calls-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.calls-views {
+    display: flex;
+    gap: 10px;
+}
+
+.calls-views .calls-view-button {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #3e4a59; /* Muted Dark */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.calls-views .calls-view-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.calls-views .calls-view-button.active {
+    color: #f0433d; /* Red Accent */
+    font-weight: 500;
+    border-bottom: 2px solid #f0433d;
+}
+
+.calls-table-container {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.calls-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calls-table th,
+.calls-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.calls-table th {
+    background-color: #f8f9fa;
+    font-weight: 500;
+    color: #3e4a59; /* Muted Dark */
+}
+
+.calls-table tbody tr:hover {
+    background-color: #f4f5f7; /* Background Light */
+}
+
+.calls-table a {
+    color: #007bff; /* Primary Blue */
+    text-decoration: none;
+}
+
+.calls-table a:hover {
+    text-decoration: underline;
+}
+
+.checkbox-column {
+    width: 40px;
+    text-align: center;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.status-scheduled {
+    background-color: #e6f7ff;
+    color: #0070cc;
+}
+
+.status-completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-missed {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.calls-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.calls-pagination-info {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.calls-pagination-actions {
+    display: flex;
+    gap: 5px;
+}
+

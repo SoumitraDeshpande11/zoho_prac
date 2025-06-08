@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cases - Zoho CRM Clone</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/layout-fix.css">
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/dropdown.css">
+    <link rel="stylesheet" href="../css/components/search.css">
+    <link rel="stylesheet" href="../css/components/sidebar.css">
+    <link rel="stylesheet" href="../css/components/topbar.css">
+    <link rel="stylesheet" href="../css/components/cards.css">
+    <link rel="stylesheet" href="../css/components/tables.css">
+    <link rel="stylesheet" href="../css/components/buttons.css">
+    <link rel="stylesheet" href="../css/components/forms.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/pages/cases.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar will be loaded here by JavaScript -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="https://www.zohowebstatic.com/sites/default/files/ogimage/crm-logo.png" alt="Zoho CRM Logo">
+                <span>Modules</span>
+            </div>
+            <div class="sidebar-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="sidebar-menu">
+                <ul class="sidebar-menu-items">
+                    <li class="sidebar-menu-item">
+                        <a href="../index.html">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="leads.html">
+                            <i class="fas fa-user-tie"></i>
+                            Leads
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="contacts.html">
+                            <i class="fas fa-address-book"></i>
+                            Contacts
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="accounts.html">
+                            <i class="fas fa-building"></i>
+                            Accounts
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="deals.html">
+                            <i class="fas fa-handshake"></i>
+                            Deals
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="quotes.html">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            Quotes
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="sales-orders.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            Sales Orders
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="invoices.html">
+                            <i class="fas fa-receipt"></i>
+                            Invoices
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="tasks.html">
+                            <i class="fas fa-tasks"></i>
+                            Tasks
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="meetings.html">
+                            <i class="fas fa-calendar-alt"></i>
+                            Meetings
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="calls.html">
+                            <i class="fas fa-phone"></i>
+                            Calls
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="events.html">
+                            <i class="fas fa-calendar-check"></i>
+                            Events
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="products.html">
+                            <i class="fas fa-box"></i>
+                            Products
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="price-books.html">
+                            <i class="fas fa-book"></i>
+                            Price Books
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="vendors.html">
+                            <i class="fas fa-store"></i>
+                            Vendors
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="campaigns.html">
+                            <i class="fas fa-bullhorn"></i>
+                            Campaigns
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item active">
+                        <a href="cases.html">
+                            <i class="fas fa-life-ring"></i>
+                            Cases
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="solutions.html">
+                            <i class="fas fa-lightbulb"></i>
+                            Solutions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-footer">
+                <div class="user-avatar">SD</div>
+                <div class="user-info">
+                    <div class="user-name">CRM Teamspace</div>
+                    <div class="user-role">Administrator</div>
+                </div>
+                <div class="dropdown-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Topbar -->
+            <header class="topbar">
+                <div class="topbar-left">
+                    <h1 class="topbar-title">Cases</h1>
+                    <div class="topbar-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Create Case
+                        </button>
+                        <button class="btn btn-outline-secondary">
+                            <i class="fas fa-upload"></i> Import
+                        </button>
+                    </div>
+                </div>
+                <div class="topbar-right">
+                    <div class="topbar-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search Cases">
+                    </div>
+                    <div class="topbar-icons">
+                        <div class="topbar-icon">
+                            <i class="fas fa-filter"></i>
+                        </div>
+                        <div class="topbar-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="content-wrapper">
+                <div class="cases-filters">
+                    <div class="cases-views">
+                        <button class="cases-view-button active">All Cases</button>
+                        <button class="cases-view-button">My Cases</button>
+                        <button class="cases-view-button">Open Cases</button>
+                        <button class="cases-view-button">High Priority</button>
+                        <button class="cases-view-button">Escalated Cases</button>
+                        <button class="cases-view-button">Closed Cases</button>
+                    </div>
+                    <div class="cases-actions">
+                        <select class="form-select">
+                            <option>All Types</option>
+                            <option>Technical Issue</option>
+                            <option>Billing Question</option>
+                            <option>Feature Request</option>
+                            <option>Bug Report</option>
+                            <option>General Inquiry</option>
+                        </select>
+                        <button class="btn btn-sm btn-outline-secondary">
+                            <i class="fas fa-download"></i> Export
+                        </button>
+                        <button class="btn btn-sm btn-outline-secondary">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cases-table-container">
+                    <table class="cases-table">
+                        <thead>
+                            <tr>
+                                <th class="checkbox-column">
+                                    <input type="checkbox">
+                                </th>
+                                <th>Case Number</th>
+                                <th>Subject</th>
+                                <th>Account</th>
+                                <th>Contact</th>
+                                <th>Priority</th>
+                                <th>Status</th>
+                                <th>Type</th>
+                                <th>Created Date</th>
+                                <th>Owner</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#" class="case-link">CASE-000001</a></td>
+                                <td><a href="#" class="case-subject">Login Issues with CRM System</a></td>
+                                <td><a href="#" class="account-link">Acme Corporation</a></td>
+                                <td><a href="#" class="contact-link">John Smith</a></td>
+                                <td><span class="priority-badge high">High</span></td>
+                                <td><span class="badge badge-warning">In Progress</span></td>
+                                <td><span class="case-type">Technical Issue</span></td>
+                                <td>Dec 20, 2024</td>
+                                <td>Sarah Johnson</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-info">
+                                            <i class="fas fa-comments"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#" class="case-link">CASE-000002</a></td>
+                                <td><a href="#" class="case-subject">Billing Discrepancy for December</a></td>
+                                <td><a href="#" class="account-link">Tech Solutions Inc</a></td>
+                                <td><a href="#" class="contact-link">Emily Davis</a></td>
+                                <td><span class="priority-badge medium">Medium</span></td>
+                                <td><span class="badge badge-info">Waiting for Customer</span></td>
+                                <td><span class="case-type">Billing Question</span></td>
+                                <td>Dec 18, 2024</td>
+                                <td>Mike Wilson</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-info">
+                                            <i class="fas fa-comments"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#" class="case-link">CASE-000003</a></td>
+                                <td><a href="#" class="case-subject">Feature Request: Advanced Reporting</a></td>
+                                <td><a href="#" class="account-link">Global Industries</a></td>
+                                <td><a href="#" class="contact-link">David Brown</a></td>
+                                <td><span class="priority-badge low">Low</span></td>
+                                <td><span class="badge badge-secondary">Under Review</span></td>
+                                <td><span class="case-type">Feature Request</span></td>
+                                <td>Dec 15, 2024</td>
+                                <td>John Smith</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-info">
+                                            <i class="fas fa-comments"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#" class="case-link">CASE-000004</a></td>
+                                <td><a href="#" class="case-subject">Data Export Not Working</a></td>
+                                <td><a href="#" class="account-link">Enterprise Solutions</a></td>
+                                <td><a href="#" class="contact-link">Lisa Anderson</a></td>
+                                <td><span class="priority-badge critical">Critical</span></td>
+                                <td><span class="badge badge-danger">Escalated</span></td>
+                                <td><span class="case-type">Bug Report</span></td>
+                                <td>Dec 22, 2024</td>
+                                <td>Emily Davis</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-info">
+                                            <i class="fas fa-comments"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox-column">
+                                    <input type="checkbox">
+                                </td>
+                                <td><a href="#" class="case-link">CASE-000005</a></td>
+                                <td><a href="#" class="case-subject">General Product Information Request</a></td>
+                                <td><a href="#" class="account-link">Innovation Labs</a></td>
+                                <td><a href="#" class="contact-link">Robert Kim</a></td>
+                                <td><span class="priority-badge low">Low</span></td>
+                                <td><span class="badge badge-success">Closed</span></td>
+                                <td><span class="case-type">General Inquiry</span></td>
+                                <td>Dec 10, 2024</td>
+                                <td>Sarah Johnson</td>
+                                <td>
+                                    <div class="table-actions">
+                                        <button class="btn btn-sm btn-outline-primary">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-info">
+                                            <i class="fas fa-comments"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pagination-container">
+                    <div class="pagination-info">
+                        Showing 1-5 of 34 cases
+                    </div>
+                    <div class="pagination">
+                        <button class="pagination-btn" disabled>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="pagination-btn active">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn">3</button>
+                        <button class="pagination-btn">4</button>
+                        <button class="pagination-btn">5</button>
+                        <button class="pagination-btn">6</button>
+                        <button class="pagination-btn">7</button>
+                        <button class="pagination-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Zoho CRM Clone. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/script.js"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+</html>

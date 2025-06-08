@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pending Requests - Zoho CRM Clone</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/layout-fix.css">
+    <link rel="stylesheet" href="../../css/components/navbar.css">
+    <link rel="stylesheet" href="../../css/components/dropdown.css">
+    <link rel="stylesheet" href="../../css/components/search.css">
+    <link rel="stylesheet" href="../../css/components/sidebar.css">
+    <link rel="stylesheet" href="../../css/components/topbar.css">
+    <link rel="stylesheet" href="../../css/components/cards.css">
+    <link rel="stylesheet" href="../../css/components/tables.css">
+    <link rel="stylesheet" href="../../css/components/buttons.css">
+    <link rel="stylesheet" href="../../css/components/forms.css">
+    <link rel="stylesheet" href="../../css/components/footer.css">
+    <link rel="stylesheet" href="../../css/components/modals.css">
+    <link rel="stylesheet" href="../../css/pages/requests.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar will be loaded here by JavaScript -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="https://www.zohowebstatic.com/sites/default/files/ogimage/crm-logo.png" alt="Zoho CRM Logo">
+                <span>Modules</span>
+            </div>
+            <div class="sidebar-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="sidebar-menu">
+                <ul class="sidebar-menu-items">
+                    <li class="sidebar-menu-item">
+                        <a href="../../index.html">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../leads.html">
+                            <i class="fas fa-user-tie"></i>
+                            Leads
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../contacts.html">
+                            <i class="fas fa-address-book"></i>
+                            Contacts
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../accounts.html">
+                            <i class="fas fa-building"></i>
+                            Accounts
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../deals.html">
+                            <i class="fas fa-handshake"></i>
+                            Deals
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../tasks.html">
+                            <i class="fas fa-tasks"></i>
+                            Tasks
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../meetings.html">
+                            <i class="fas fa-calendar-alt"></i>
+                            Meetings
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../calls.html">
+                            <i class="fas fa-phone"></i>
+                            Calls
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../reports.html">
+                            <i class="fas fa-chart-bar"></i>
+                            Reports
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../dashboards.html">
+                            <i class="fas fa-tachometer-alt"></i>
+                            Dashboards
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item active">
+                        <a href="../requests.html">
+                            <i class="fas fa-clipboard-list"></i>
+                            My Requests
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../marketplace.html">
+                            <i class="fas fa-store-alt"></i>
+                            Marketplace
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-footer">
+                <div class="user-avatar">SD</div>
+                <div class="user-info">
+                    <div class="user-name">CRM Teamspace</div>
+                    <div class="user-role">Administrator</div>
+                </div>
+                <div class="dropdown-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Topbar -->
+            <header class="topbar">
+                <div class="topbar-left">
+                    <h1 class="topbar-title">Pending Requests</h1>
+                    <div class="topbar-actions">
+                        <button class="btn btn-outline-secondary">
+                            <i class="fas fa-sync-alt"></i>
+                            Refresh
+                        </button>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle">
+                                Filter by Type <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">All Types</a>
+                                <a href="#" class="dropdown-item">Approval Requests</a>
+                                <a href="#" class="dropdown-item">Data Access</a>
+                                <a href="#" class="dropdown-item">Permission Requests</a>
+                                <a href="#" class="dropdown-item">Workflow Requests</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbar-right">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-plus"></i>
+                        New Request
+                    </button>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="content-wrapper">
+                <!-- Requests Navigation -->
+                <div class="requests-nav">
+                    <div class="nav-tabs">
+                        <a href="pending.html" class="nav-tab active">
+                            <i class="fas fa-clock"></i>
+                            Pending
+                            <span class="badge badge-warning">5</span>
+                        </a>
+                        <a href="approved.html" class="nav-tab">
+                            <i class="fas fa-check-circle"></i>
+                            Approved
+                        </a>
+                        <a href="rejected.html" class="nav-tab">
+                            <i class="fas fa-times-circle"></i>
+                            Rejected
+                        </a>
+                        <a href="all.html" class="nav-tab">
+                            <i class="fas fa-list"></i>
+                            All Requests
+                        </a>
+                    </div>
+                    <div class="nav-actions">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search requests..." id="request-search">
+                        </div>
+                        <div class="sort-dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle">
+                                <i class="fas fa-sort"></i>
+                                Sort by Date
+                            </button>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Date Created</a>
+                                <a href="#" class="dropdown-item">Request Type</a>
+                                <a href="#" class="dropdown-item">Priority</a>
+                                <a href="#" class="dropdown-item">Status</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Requests Summary -->
+                <div class="requests-summary">
+                    <div class="summary-card urgent">
+                        <div class="summary-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="summary-content">
+                            <h3>2</h3>
+                            <p>Urgent Requests</p>
+                        </div>
+                    </div>
+                    <div class="summary-card high">
+                        <div class="summary-icon">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                        <div class="summary-content">
+                            <h3>3</h3>
+                            <p>High Priority</p>
+                        </div>
+                    </div>
+                    <div class="summary-card normal">
+                        <div class="summary-icon">
+                            <i class="fas fa-equals"></i>
+                        </div>
+                        <div class="summary-content">
+                            <h3>8</h3>
+                            <p>Normal Priority</p>
+                        </div>
+                    </div>
+                    <div class="summary-card overdue">
+                        <div class="summary-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="summary-content">
+                            <h3>1</h3>
+                            <p>Overdue</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pending Requests List -->
+                <div class="requests-container">
+                    <div class="requests-header">
+                        <h3>Pending Requests (5)</h3>
+                        <div class="header-actions">
+                            <button class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-download"></i>
+                                Export
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="requests-list">
+                        <!-- Request Item 1 -->
+                        <div class="request-item urgent">
+                            <div class="request-priority">
+                                <span class="priority-indicator urgent"></span>
+                            </div>
+                            <div class="request-content">
+                                <div class="request-header">
+                                    <div class="request-info">
+                                        <h4 class="request-title">Data Export Permission</h4>
+                                        <div class="request-meta">
+                                            <span class="request-id">#REQ-2024-001</span>
+                                            <span class="request-type">Data Access</span>
+                                            <span class="request-date">Created: Jan 15, 2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="request-status">
+                                        <span class="status-badge pending">Pending Review</span>
+                                        <span class="request-timer">2 days overdue</span>
+                                    </div>
+                                </div>
+                                <div class="request-description">
+                                    <p>Request for permission to export customer contact data for quarterly marketing campaign analysis. Need access to export leads and contacts data in CSV format.</p>
+                                </div>
+                                <div class="request-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Requested by:</span>
+                                        <span class="detail-value">Sarah Johnson (Marketing Team)</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Approver:</span>
+                                        <span class="detail-value">Mike Davidson (Data Protection Officer)</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Due Date:</span>
+                                        <span class="detail-value overdue">Jan 17, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="request-actions">
+                                <button class="btn btn-sm btn-primary">
+                                    <i class="fas fa-eye"></i>
+                                    View Details
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary">
+                                    <i class="fas fa-comment"></i>
+                                    Add Note
+                                </button>
+                                <div class="dropdown">
+                                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Follow Up</a>
+                                        <a href="#" class="dropdown-item">Escalate</a>
+                                        <a href="#" class="dropdown-item">Cancel Request</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Request Item 2 -->
+                        <div class="request-item high">
+                            <div class="request-priority">
+                                <span class="priority-indicator high"></span>
+                            </div>
+                            <div class="request-content">
+                                <div class="request-header">
+                                    <div class="request-info">
+                                        <h4 class="request-title">Lead Assignment Rule Modification</h4>
+                                        <div class="request-meta">
+                                            <span class="request-id">#REQ-2024-002</span>
+                                            <span class="request-type">Workflow Request</span>
+                                            <span class="request-date">Created: Jan 16, 2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="request-status">
+                                        <span class="status-badge pending">Awaiting Approval</span>
+                                        <span class="request-timer">1 day remaining</span>
+                                    </div>
+                                </div>
+                                <div class="request-description">
+                                    <p>Request to modify the automatic lead assignment rules to include geographic distribution criteria. This will help balance workload across regional sales teams.</p>
+                                </div>
+                                <div class="request-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Requested by:</span>
+                                        <span class="detail-value">John Smith (Sales Manager)</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Approver:</span>
+                                        <span class="detail-value">Lisa Chen (CRM Administrator)</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Due Date:</span>
+                                        <span class="detail-value">Jan 20, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="request-actions">
+                                <button class="btn btn-sm btn-primary">
+                                    <i class="fas fa-eye"></i>
+                                    View Details
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary">
+                                    <i class="fas fa-comment"></i>
+                                    Add Note
+                                </button>
+                                <div class="dropdown">
+                                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Follow Up</a>
+                                        <a href="#" class="dropdown-item">Escalate</a>
+                                        <a href="#" class="dropdown-item">Cancel Request</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Request Item 3 -->
+                        <div class="request-item normal">
+                            <div class="request-priority">
+                                <span class="priority-indicator normal"></span>
+                            </div>
+                            <div class="request-content">
+                                <div class="request-header">
+                                    <div class="request-info">
+                                        <h4 class="request-title">Custom Field Creation</h4>
+                                        <div class="request-meta">
+                                            <span class="request-id">#REQ-2024-003</span>
+                                            <span class="request-type">Permission Request</span>
+                                            <span class="request-date">Created: Jan 17, 2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="request-status">
+                                        <span class="status-badge pending">Under Review</span>
+                                        <span class="request-timer">3 days remaining</span>
+                                    </div>
+                                </div>
+                                <div class="request-description">
+                                    <p>Request to create custom fields for tracking customer satisfaction scores and Net Promoter Score (NPS) in the Accounts module.</p>
+                                </div>
+                                <div class="request-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Requested by:</span>
+                                        <span class="detail-value">Emily Davis (Customer Success)</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Approver:</span>
+                                        <span class="detail-value">Alex Rodriguez (System Admin)</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Due Date:</span>
+                                        <span class="detail-value">Jan 22, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="request-actions">
+                                <button class="btn btn-sm btn-primary">
+                                    <i class="fas fa-eye"></i>
+                                    View Details
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary">
+                                    <i class="fas fa-comment"></i>
+                                    Add Note
+                                </button>
+                                <div class="dropdown">
+                                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Follow Up</a>
+                                        <a href="#" class="dropdown-item">Escalate</a>
+                                        <a href="#" class="dropdown-item">Cancel Request</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Request Item 4 -->
+                        <div class="request-item normal">
+                            <div class="request-priority">
+                                <span class="priority-indicator normal"></span>
+                            </div>
+                            <div class="request-content">
+                                <div class="request-header">
+                                    <div class="request-info">
+                                        <h4 class="request-title">Email Template Approval</h4>
+                                        <div class="request-meta">
+                                            <span class="request-id">#REQ-2024-004</span>
+                                            <span class="request-type">Approval Request</span>
+                                            <span class="request-date">Created: Jan 18, 2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="request-status">
+                                        <span class="status-badge pending">Pending Approval</span>
+                                        <span class="request-timer">4 days remaining</span>
+                                    </div>
+                                </div>
+                                <div class="request-description">
+                                    <p>New email template for quarterly product update notifications needs approval before deployment to customer base.</p>
+                                </div>
+                                <div class="request-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Requested by:</span>
+                                        <span class="detail-value">Mark Wilson (Marketing)</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Approver:</span>
+                                        <span class="detail-value">Jennifer Liu (Marketing Director)</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Due Date:</span>
+                                        <span class="detail-value">Jan 25, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="request-actions">
+                                <button class="btn btn-sm btn-primary">
+                                    <i class="fas fa-eye"></i>
+                                    View Details
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary">
+                                    <i class="fas fa-comment"></i>
+                                    Add Note
+                                </button>
+                                <div class="dropdown">
+                                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Follow Up</a>
+                                        <a href="#" class="dropdown-item">Escalate</a>
+                                        <a href="#" class="dropdown-item">Cancel Request</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Request Item 5 -->
+                        <div class="request-item high">
+                            <div class="request-priority">
+                                <span class="priority-indicator high"></span>
+                            </div>
+                            <div class="request-content">
+                                <div class="request-header">
+                                    <div class="request-info">
+                                        <h4 class="request-title">Integration API Access</h4>
+                                        <div class="request-meta">
+                                            <span class="request-id">#REQ-2024-005</span>
+                                            <span class="request-type">Data Access</span>
+                                            <span class="request-date">Created: Jan 18, 2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="request-status">
+                                        <span class="status-badge pending">Security Review</span>
+                                        <span class="request-timer">2 days remaining</span>
+                                    </div>
+                                </div>
+                                <div class="request-description">
+                                    <p>Request for API access to integrate CRM data with external business intelligence platform for advanced analytics and reporting.</p>
+                                </div>
+                                <div class="request-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Requested by:</span>
+                                        <span class="detail-value">David Kim (IT Department)</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Approver:</span>
+                                        <span class="detail-value">Security Team</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Due Date:</span>
+                                        <span class="detail-value">Jan 23, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="request-actions">
+                                <button class="btn btn-sm btn-primary">
+                                    <i class="fas fa-eye"></i>
+                                    View Details
+                                </button>
+                                <button class="btn btn-sm btn-outline-secondary">
+                                    <i class="fas fa-comment"></i>
+                                    Add Note
+                                </button>
+                                <div class="dropdown">
+                                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Follow Up</a>
+                                        <a href="#" class="dropdown-item">Escalate</a>
+                                        <a href="#" class="dropdown-item">Cancel Request</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="requests-pagination">
+                        <div class="pagination-info">
+                            Showing 1-5 of 5 requests
+                        </div>
+                        <div class="pagination-controls">
+                            <button class="btn btn-sm btn-outline-secondary" disabled>
+                                <i class="fas fa-chevron-left"></i>
+                                Previous
+                            </button>
+                            <div class="page-numbers">
+                                <button class="page-btn active">1</button>
+                            </div>
+                            <button class="btn btn-sm btn-outline-secondary" disabled>
+                                Next
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="smart-chat">
+            Here is your Smart Chat (Ctrl+Space)
+        </div>
+        <div class="footer-actions">
+            <button class="footer-action-button">
+                <i class="fas fa-comment-alt"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-sync-alt"></i>
+            </button>
+            <button class="footer-action-button">
+                <span class="feedback-badge">Feedback on New UI</span>
+            </button>
+            <button class="footer-action-button">
+                Ask Zia
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-clipboard"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-bell"></i>
+                <span class="badge">1</span>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-question-circle"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+    <script src="../../js/modals.js"></script>
+    <script src="../../js/navbar.js"></script>
+    <script>
+        // Requests page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Search functionality
+            const searchInput = document.getElementById('request-search');
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                const requestItems = document.querySelectorAll('.request-item');
+                
+                requestItems.forEach(item => {
+                    const title = item.querySelector('.request-title').textContent.toLowerCase();
+                    const description = item.querySelector('.request-description p').textContent.toLowerCase();
+                    const requestId = item.querySelector('.request-id').textContent.toLowerCase();
+                    
+                    if (title.includes(searchTerm) || description.includes(searchTerm) || requestId.includes(searchTerm)) {
+                        item.style.display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+
+            // Request actions
+            const viewButtons = document.querySelectorAll('.request-actions .btn-primary');
+            viewButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const requestItem = this.closest('.request-item');
+                    const requestTitle = requestItem.querySelector('.request-title').textContent;
+                    alert(`Opening details for: ${requestTitle}`);
+                });
+            });
+
+            // Add note functionality
+            const noteButtons = document.querySelectorAll('.request-actions .btn-outline-secondary');
+            noteButtons.forEach(btn => {
+                if (btn.querySelector('.fa-comment')) {
+                    btn.addEventListener('click', function() {
+                        const requestItem = this.closest('.request-item');
+                        const requestTitle = requestItem.querySelector('.request-title').textContent;
+                        const note = prompt(`Add a note for: ${requestTitle}`);
+                        if (note) {
+                            alert('Note added successfully!');
+                        }
+                    });
+                }
+            });
+
+            // Update request timers (simulation)
+            function updateTimers() {
+                const timers = document.querySelectorAll('.request-timer');
+                timers.forEach(timer => {
+                    const text = timer.textContent;
+                    if (text.includes('overdue')) {
+                        timer.style.color = '#dc3545';
+                        timer.style.fontWeight = 'bold';
+                    } else if (text.includes('1 day')) {
+                        timer.style.color = '#ffc107';
+                    }
+                });
+            }
+
+            updateTimers();
+
+            // Auto-refresh every 30 seconds (simulation)
+            setInterval(() => {
+                console.log('Auto-refreshing request status...');
+            }, 30000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoho CRM Clone - Main Navigation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout-fix.css">
+    <link rel="stylesheet" href="css/components/navbar.css">
+    <link rel="stylesheet" href="css/components/dropdown.css">
+    <link rel="stylesheet" href="css/components/search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Main Navbar -->
+    <nav class="main-navbar">
+        <div class="navbar-container">
+            <!-- Logo Section -->
+            <div class="navbar-brand">
+                <img src="https://www.zohowebstatic.com/sites/default/files/ogimage/crm-logo.png" alt="Zoho CRM" class="navbar-logo">
+                <span class="navbar-title">CRM</span>
+            </div>
+
+            <!-- Main Navigation Menu -->
+            <ul class="navbar-menu">
+                <!-- Modules Dropdown -->
+                <li class="navbar-item dropdown" id="modules-dropdown">
+                    <a href="index.html" class="navbar-link dropdown-toggle">
+                        <i class="fas fa-th-large"></i>
+                        Modules
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-menu modules-dropdown-menu">
+                        <div class="dropdown-section">
+                            <h6 class="dropdown-header">Sales</h6>
+                            <a href="pages/leads.html" class="dropdown-item">
+                                <i class="fas fa-user-tie"></i>
+                                Leads
+                            </a>
+                            <a href="pages/contacts.html" class="dropdown-item">
+                                <i class="fas fa-address-book"></i>
+                                Contacts
+                            </a>
+                            <a href="pages/accounts.html" class="dropdown-item">
+                                <i class="fas fa-building"></i>
+                                Accounts
+                            </a>
+                            <a href="pages/deals.html" class="dropdown-item">
+                                <i class="fas fa-handshake"></i>
+                                Deals
+                            </a>
+                            <a href="pages/quotes.html" class="dropdown-item">
+                                <i class="fas fa-file-invoice-dollar"></i>
+                                Quotes
+                            </a>
+                            <a href="pages/sales-orders.html" class="dropdown-item">
+                                <i class="fas fa-shopping-cart"></i>
+                                Sales Orders
+                            </a>
+                            <a href="pages/invoices.html" class="dropdown-item">
+                                <i class="fas fa-receipt"></i>
+                                Invoices
+                            </a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h6 class="dropdown-header">Marketing</h6>
+                            <a href="pages/campaigns.html" class="dropdown-item">
+                                <i class="fas fa-bullhorn"></i>
+                                Campaigns
+                            </a>
+                            <a href="pages/social.html" class="dropdown-item">
+                                <i class="fas fa-share-alt"></i>
+                                Social
+                            </a>
+                            <a href="pages/webforms.html" class="dropdown-item">
+                                <i class="fas fa-wpforms"></i>
+                                Web Forms
+                            </a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h6 class="dropdown-header">Support</h6>
+                            <a href="pages/cases.html" class="dropdown-item">
+                                <i class="fas fa-life-ring"></i>
+                                Cases
+                            </a>
+                            <a href="pages/solutions.html" class="dropdown-item">
+                                <i class="fas fa-lightbulb"></i>
+                                Solutions
+                            </a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h6 class="dropdown-header">Activities</h6>
+                            <a href="pages/tasks.html" class="dropdown-item">
+                                <i class="fas fa-tasks"></i>
+                                Tasks
+                            </a>
+                            <a href="pages/meetings.html" class="dropdown-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                Meetings
+                            </a>
+                            <a href="pages/calls.html" class="dropdown-item">
+                                <i class="fas fa-phone"></i>
+                                Calls
+                            </a>
+                            <a href="pages/events.html" class="dropdown-item">
+                                <i class="fas fa-calendar-check"></i>
+                                Events
+                            </a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h6 class="dropdown-header">Inventory</h6>
+                            <a href="pages/products.html" class="dropdown-item">
+                                <i class="fas fa-box"></i>
+                                Products
+                            </a>
+                            <a href="pages/price-books.html" class="dropdown-item">
+                                <i class="fas fa-book"></i>
+                                Price Books
+                            </a>
+                            <a href="pages/vendors.html" class="dropdown-item">
+                                <i class="fas fa-store"></i>
+                                Vendors
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Reports Dropdown -->
+                <li class="navbar-item dropdown" id="reports-dropdown">
+                    <a href="pages/reports.html" class="navbar-link dropdown-toggle">
+                        <i class="fas fa-chart-bar"></i>
+                        Reports
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-menu reports-dropdown-menu">
+                        <div class="dropdown-section">
+                            <a href="pages/reports/all-reports.html" class="dropdown-item">
+                                <i class="fas fa-list"></i>
+                                All Reports
+                            </a>
+                            <a href="pages/reports/my-reports.html" class="dropdown-item">
+                                <i class="fas fa-user-chart"></i>
+                                My Reports
+                            </a>
+                            <a href="pages/reports/favorites.html" class="dropdown-item">
+                                <i class="fas fa-star"></i>
+                                Favorites
+                            </a>
+                            <a href="pages/reports/shared.html" class="dropdown-item">
+                                <i class="fas fa-share"></i>
+                                Shared Reports
+                            </a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h6 class="dropdown-header">Report Types</h6>
+                            <a href="pages/reports/sales-reports.html" class="dropdown-item">
+                                <i class="fas fa-chart-line"></i>
+                                Sales Reports
+                            </a>
+                            <a href="pages/reports/activity-reports.html" class="dropdown-item">
+                                <i class="fas fa-chart-pie"></i>
+                                Activity Reports
+                            </a>
+                            <a href="pages/reports/marketing-reports.html" class="dropdown-item">
+                                <i class="fas fa-chart-area"></i>
+                                Marketing Reports
+                            </a>
+                            <a href="pages/reports/custom-reports.html" class="dropdown-item">
+                                <i class="fas fa-cogs"></i>
+                                Custom Reports
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Analytics Dropdown -->
+                <li class="navbar-item dropdown" id="analytics-dropdown">
+                    <a href="pages/analytics/dashboard.html" class="navbar-link dropdown-toggle">
+                        <i class="fas fa-analytics"></i>
+                        Analytics
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-menu analytics-dropdown-menu">
+                        <div class="dropdown-section">
+                            <a href="pages/analytics/dashboard.html" class="dropdown-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                Analytics Dashboard
+                            </a>
+                            <a href="pages/analytics/sales-insights.html" class="dropdown-item">
+                                <i class="fas fa-chart-line"></i>
+                                Sales Insights
+                            </a>
+                            <a href="pages/analytics/performance.html" class="dropdown-item">
+                                <i class="fas fa-trophy"></i>
+                                Performance Analytics
+                            </a>
+                            <a href="pages/analytics/forecasting.html" class="dropdown-item">
+                                <i class="fas fa-crystal-ball"></i>
+                                Forecasting
+                            </a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h6 class="dropdown-header">Advanced Analytics</h6>
+                            <a href="pages/analytics/funnel-analysis.html" class="dropdown-item">
+                                <i class="fas fa-filter"></i>
+                                Funnel Analysis
+                            </a>
+                            <a href="pages/analytics/trend-analysis.html" class="dropdown-item">
+                                <i class="fas fa-trending-up"></i>
+                                Trend Analysis
+                            </a>
+                            <a href="pages/analytics/comparative.html" class="dropdown-item">
+                                <i class="fas fa-balance-scale"></i>
+                                Comparative Analysis
+                            </a>
+                            <a href="pages/analytics/predictive.html" class="dropdown-item">
+                                <i class="fas fa-brain"></i>
+                                Predictive Analytics
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- My Requests Dropdown -->
+                <li class="navbar-item dropdown" id="requests-dropdown">
+                    <a href="pages/requests/pending.html" class="navbar-link dropdown-toggle">
+                        <i class="fas fa-clipboard-list"></i>
+                        My Requests
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-menu requests-dropdown-menu">
+                        <div class="dropdown-section">
+                            <a href="pages/requests/pending.html" class="dropdown-item">
+                                <i class="fas fa-clock"></i>
+                                Pending Requests
+                                <span class="badge badge-warning">5</span>
+                            </a>
+                            <a href="pages/requests/approved.html" class="dropdown-item">
+                                <i class="fas fa-check-circle"></i>
+                                Approved Requests
+                            </a>
+                            <a href="pages/requests/rejected.html" class="dropdown-item">
+                                <i class="fas fa-times-circle"></i>
+                                Rejected Requests
+                            </a>
+                            <a href="pages/requests/all.html" class="dropdown-item">
+                                <i class="fas fa-list"></i>
+                                All Requests
+                            </a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h6 class="dropdown-header">Request Types</h6>
+                            <a href="pages/requests/approval.html" class="dropdown-item">
+                                <i class="fas fa-stamp"></i>
+                                Approval Requests
+                            </a>
+                            <a href="pages/requests/data-access.html" class="dropdown-item">
+                                <i class="fas fa-database"></i>
+                                Data Access
+                            </a>
+                            <a href="pages/requests/permissions.html" class="dropdown-item">
+                                <i class="fas fa-key"></i>
+                                Permission Requests
+                            </a>
+                            <a href="pages/requests/workflow.html" class="dropdown-item">
+                                <i class="fas fa-project-diagram"></i>
+                                Workflow Requests
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Marketplace Dropdown -->
+                <li class="navbar-item dropdown" id="marketplace-dropdown">
+                    <a href="pages/marketplace.html" class="navbar-link dropdown-toggle">
+                        <i class="fas fa-store"></i>
+                        Marketplace
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-menu marketplace-dropdown-menu">
+                        <div class="dropdown-section">
+                            <a href="pages/marketplace/home.html" class="dropdown-item">
+                                <i class="fas fa-home"></i>
+                                Marketplace Home
+                            </a>
+                            <a href="pages/marketplace/browse.html" class="dropdown-item">
+                                <i class="fas fa-search"></i>
+                                Browse Apps
+                            </a>
+                            <a href="pages/marketplace/installed.html" class="dropdown-item">
+                                <i class="fas fa-download"></i>
+                                Installed Apps
+                            </a>
+                            <a href="pages/marketplace/favorites.html" class="dropdown-item">
+                                <i class="fas fa-heart"></i>
+                                Favorite Apps
+                            </a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h6 class="dropdown-header">Categories</h6>
+                            <a href="pages/marketplace/sales.html" class="dropdown-item">
+                                <i class="fas fa-chart-line"></i>
+                                Sales Apps
+                            </a>
+                            <a href="pages/marketplace/marketing.html" class="dropdown-item">
+                                <i class="fas fa-bullhorn"></i>
+                                Marketing Apps
+                            </a>
+                            <a href="pages/marketplace/productivity.html" class="dropdown-item">
+                                <i class="fas fa-rocket"></i>
+                                Productivity Apps
+                            </a>
+                            <a href="pages/marketplace/integrations.html" class="dropdown-item">
+                                <i class="fas fa-plug"></i>
+                                Integrations
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- Search Section -->
+            <div class="navbar-search">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search a record..." id="global-search">
+                    <button class="search-button" type="button" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    
+                    <!-- Search Dropdown -->
+                    <div class="search-dropdown" id="search-dropdown">
+                        <div class="search-filters">
+                            <div class="filter-group">
+                                <label class="filter-label">Search in:</label>
+                                <select class="filter-select" id="search-module">
+                                    <option value="all">All Modules</option>
+                                    <option value="leads">Leads</option>
+                                    <option value="contacts">Contacts</option>
+                                    <option value="accounts">Accounts</option>
+                                    <option value="deals">Deals</option>
+                                    <option value="tasks">Tasks</option>
+                                    <option value="meetings">Meetings</option>
+                                    <option value="calls">Calls</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="search-results" id="search-results">
+                            <div class="search-section">
+                                <h6 class="search-section-title">Recent Searches</h6>
+                                <div class="recent-searches">
+                                    <span class="search-tag">John Smith</span>
+                                    <span class="search-tag">Enterprise Solutions</span>
+                                    <span class="search-tag">Q4 Deal</span>
+                                </div>
+                            </div>
+                            
+                            <div class="search-section">
+                                <h6 class="search-section-title">Quick Access</h6>
+                                <a href="pages/leads.html" class="quick-access-item">
+                                    <i class="fas fa-user-tie"></i>
+                                    Create New Lead
+                                </a>
+                                <a href="pages/contacts.html" class="quick-access-item">
+                                    <i class="fas fa-address-book"></i>
+                                    Add Contact
+                                </a>
+                                <a href="pages/deals.html" class="quick-access-item">
+                                    <i class="fas fa-handshake"></i>
+                                    New Deal
+                                </a>
+                                <a href="pages/tasks.html" class="quick-access-item">
+                                    <i class="fas fa-tasks"></i>
+                                    Create Task
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Menu -->
+            <div class="navbar-user">
+                <div class="user-notifications">
+                    <button class="notification-btn" id="notifications-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+                </div>
+                
+                <div class="user-profile dropdown">
+                    <button class="user-avatar dropdown-toggle" id="user-menu">
+                        <img src="https://via.placeholder.com/32x32/f0433d/ffffff?text=SD" alt="User Avatar" class="avatar-img">
+                        <span class="user-name">Soumitra D</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    
+                    <div class="dropdown-menu user-dropdown-menu">
+                        <div class="user-info">
+                            <div class="user-details">
+                                <strong>Soumitra Deshpande</strong>
+                                <span>Administrator</span>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a href="pages/profile.html" class="dropdown-item">
+                            <i class="fas fa-user"></i>
+                            My Profile
+                        </a>
+                        <a href="pages/settings.html" class="dropdown-item">
+                            <i class="fas fa-cog"></i>
+                            Settings
+                        </a>
+                        <a href="pages/help.html" class="dropdown-item">
+                            <i class="fas fa-question-circle"></i>
+                            Help & Support
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="pages/logout.html" class="dropdown-item">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobile-sidebar">
+        <div class="mobile-sidebar-header">
+            <img src="https://www.zohowebstatic.com/sites/default/files/ogimage/crm-logo.png" alt="Zoho CRM" class="mobile-logo">
+            <button class="mobile-close" id="mobile-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="mobile-sidebar-content">
+            <div class="mobile-nav-section">
+                <h6 class="mobile-nav-title">Main Menu</h6>
+                <a href="index.html" class="mobile-nav-item">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+                <a href="pages/leads.html" class="mobile-nav-item">
+                    <i class="fas fa-user-tie"></i>
+                    Leads
+                </a>
+                <a href="pages/contacts.html" class="mobile-nav-item">
+                    <i class="fas fa-address-book"></i>
+                    Contacts
+                </a>
+                <a href="pages/accounts.html" class="mobile-nav-item">
+                    <i class="fas fa-building"></i>
+                    Accounts
+                </a>
+                <a href="pages/deals.html" class="mobile-nav-item">
+                    <i class="fas fa-handshake"></i>
+                    Deals
+                </a>
+            </div>
+            
+            <div class="mobile-nav-section">
+                <h6 class="mobile-nav-title">Reports & Analytics</h6>
+                <a href="pages/reports/all-reports.html" class="mobile-nav-item">
+                    <i class="fas fa-chart-bar"></i>
+                    Reports
+                </a>
+                <a href="pages/analytics/dashboard.html" class="mobile-nav-item">
+                    <i class="fas fa-analytics"></i>
+                    Analytics
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay for mobile -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>

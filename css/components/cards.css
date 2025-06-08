@@ -1,0 +1,195 @@
+/* Card Styles */
+.card {
+    background-color: #ffffff; /* White */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f4f5f7; /* Background Light */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2b2e34; /* Charcoal Gray */
+    margin: 0;
+}
+
+.card-subtitle {
+    font-size: 12px;
+    color: #3e4a59; /* Muted Dark */
+    margin: 5px 0 0;
+}
+
+.card-actions {
+    display: flex;
+    align-items: center;
+}
+
+.card-action {
+    background: none;
+    border: none;
+    color: #3e4a59; /* Muted Dark */
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.card-action:hover {
+    background-color: #f4f5f7; /* Background Light */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #f4f5f7; /* Background Light */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Stat Card */
+.stat-card {
+    background-color: #ffffff; /* White */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.stat-card-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2b2e34; /* Charcoal Gray */
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+
+.stat-card-value {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2b2e34; /* Charcoal Gray */
+    margin: 0;
+}
+
+.stat-card-trend {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.stat-card-trend.positive {
+    color: #28a745; /* Green */
+}
+
+.stat-card-trend.negative {
+    color: #f0433d; /* Red Accent */
+}
+
+.stat-card-trend i {
+    margin-right: 5px;
+}
+
+.stat-card-trend-value {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.stat-card-trend-label {
+    font-size: 12px;
+    color: #3e4a59; /* Muted Dark */
+    margin-left: 5px;
+}
+
+/* Chart Card */
+.chart-card {
+    background-color: #ffffff; /* White */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.chart-card-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f4f5f7; /* Background Light */
+}
+
+.chart-card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2b2e34; /* Charcoal Gray */
+    margin: 0;
+}
+
+.chart-card-body {
+    padding: 20px;
+    height: 300px;
+}
+
+/* Widget Card */
+.widget-card {
+    background-color: #ffffff; /* White */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.widget-card-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f4f5f7; /* Background Light */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.widget-card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2b2e34; /* Charcoal Gray */
+    margin: 0;
+}
+
+.widget-card-actions {
+    display: flex;
+    align-items: center;
+}
+
+.widget-card-action {
+    background: none;
+    border: none;
+    color: #3e4a59; /* Muted Dark */
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.widget-card-action:hover {
+    background-color: #f4f5f7; /* Background Light */
+}
+
+.widget-card-body {
+    padding: 20px;
+}
+
+.widget-card-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #f4f5f7; /* Background Light */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace - Zoho CRM Clone</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/layout-fix.css">
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/dropdown.css">
+    <link rel="stylesheet" href="../css/components/search.css">
+    <link rel="stylesheet" href="../css/components/sidebar.css">
+    <link rel="stylesheet" href="../css/components/topbar.css">
+    <link rel="stylesheet" href="../css/components/cards.css">
+    <link rel="stylesheet" href="../css/components/tables.css">
+    <link rel="stylesheet" href="../css/components/buttons.css">
+    <link rel="stylesheet" href="../css/components/forms.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/pages/marketplace.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar will be loaded here by JavaScript -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="https://www.zohowebstatic.com/sites/default/files/ogimage/crm-logo.png" alt="Zoho CRM Logo">
+                <span>Marketplace</span>
+            </div>
+            <div class="sidebar-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-section">
+                    <div class="sidebar-menu-header">
+                        Integrations
+                    </div>
+                    <ul class="sidebar-menu-items">
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fas fa-z"></i>
+                                Zoho
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fab fa-google"></i>
+                                Google
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fab fa-microsoft"></i>
+                                Microsoft
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fab fa-linkedin"></i>
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-menu-section">
+                    <div class="sidebar-menu-header">
+                        Marketplace
+                    </div>
+                    <ul class="sidebar-menu-items">
+                        <li class="sidebar-menu-item active">
+                            <a href="#">
+                                <i class="fas fa-th-large"></i>
+                                All
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fas fa-check-circle"></i>
+                                Installed
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a href="#">
+                                <i class="fas fa-sync-alt"></i>
+                                Updates
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar-footer">
+                <div class="user-avatar">SD</div>
+                <div class="user-info">
+                    <div class="user-name">CRM Teamspace</div>
+                    <div class="user-role">Administrator</div>
+                </div>
+                <div class="dropdown-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Topbar -->
+            <header class="topbar">
+                <div class="topbar-left">
+                    <div class="marketplace-filters">
+                        <a href="#" class="marketplace-filter-link active">
+                            <i class="fas fa-home"></i>
+                        </a>
+                        <div class="marketplace-filter-dropdown">
+                            <span>All Categories</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="marketplace-filter-dropdown">
+                            <span>Edition: All</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="marketplace-filter-dropdown">
+                            <span>Price: All</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="marketplace-filter-dropdown">
+                            <span>Rating: All</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="marketplace-filter-dropdown">
+                            <span>Deployment type: All</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbar-right">
+                    <div class="topbar-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search apps">
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="content-wrapper">
+                <div class="marketplace-grid">
+                    <!-- App Card 1 -->
+                    <div class="marketplace-card">
+                        <div class="marketplace-card-image">
+                            <img src="https://via.placeholder.com/150x150?text=QuarterOne" alt="QuarterOne">
+                        </div>
+                        <div class="marketplace-card-content">
+                            <h3 class="marketplace-card-title">QuarterOne for Zoho CRM</h3>
+                            <div class="marketplace-card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="marketplace-card-reviews">(23)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App Card 2 -->
+                    <div class="marketplace-card">
+                        <div class="marketplace-card-image">
+                            <img src="https://via.placeholder.com/150x150?text=Mapsly" alt="Mapsly">
+                        </div>
+                        <div class="marketplace-card-content">
+                            <h3 class="marketplace-card-title">Mapsly: Map Extension for Zoho CRM</h3>
+                            <div class="marketplace-card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="marketplace-card-reviews">(30)</span>
+                            </div>
+                            <button class="btn btn-primary marketplace-card-button">Install</button>
+                        </div>
+                    </div>
+
+                    <!-- App Card 3 -->
+                    <div class="marketplace-card">
+                        <div class="marketplace-card-image">
+                            <img src="https://via.placeholder.com/150x150?text=CNPJ" alt="Consulta CNPJ">
+                        </div>
+                        <div class="marketplace-card-content">
+                            <h3 class="marketplace-card-title">Consulta CNPJ Extension for Zoho CRM</h3>
+                            <div class="marketplace-card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="marketplace-card-reviews">(4)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App Card 4 -->
+                    <div class="marketplace-card">
+                        <div class="marketplace-card-image">
+                            <img src="https://via.placeholder.com/150x150?text=UPS" alt="UPS">
+                        </div>
+                        <div class="marketplace-card-content">
+                            <h3 class="marketplace-card-title">UPS Rate Comparator and Shipping</h3>
+                            <div class="marketplace-card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="marketplace-card-reviews">(10)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App Card 5 -->
+                    <div class="marketplace-card">
+                        <div class="marketplace-card-image">
+                            <img src="https://via.placeholder.com/150x150?text=Klenty" alt="Klenty">
+                        </div>
+                        <div class="marketplace-card-content">
+                            <h3 class="marketplace-card-title">Klenty Email Automation for Zoho CRM</h3>
+                            <div class="marketplace-card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="marketplace-card-reviews">(23)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App Card 6 -->
+                    <div class="marketplace-card">
+                        <div class="marketplace-card-image">
+                            <img src="https://via.placeholder.com/150x150?text=Email+Checker" alt="Email and Phone Checker">
+                        </div>
+                        <div class="marketplace-card-content">
+                            <h3 class="marketplace-card-title">Email and Phone Checker for Zoho CRM</h3>
+                            <div class="marketplace-card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="marketplace-card-reviews">(42)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App Card 7 -->
+                    <div class="marketplace-card">
+                        <div class="marketplace-card-image">
+                            <img src="https://via.placeholder.com/150x150?text=Microsoft+Exchange" alt="Microsoft Exchange">
+                        </div>
+                        <div class="marketplace-card-content">
+                            <h3 class="marketplace-card-title">Microsoft Exchange for Zoho CRM</h3>
+                            <div class="marketplace-card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="marketplace-card-reviews">(35)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App Card 8 -->
+                    <div class="marketplace-card">
+                        <div class="marketplace-card-image">
+                            <img src="https://via.placeholder.com/150x150?text=MySQL+AppiWorks" alt="MySQL AppiWorks">
+                        </div>
+                        <div class="marketplace-card-content">
+                            <h3 class="marketplace-card-title">MySQL AppiWorks for Zoho CRM</h3>
+                            <div class="marketplace-card-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="marketplace-card-reviews">(2)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="smart-chat">
+            Here is your Smart Chat (Ctrl+Space)
+        </div>
+        <div class="footer-actions">
+            <button class="footer-action-button">
+                <i class="fas fa-comment-alt"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-sync-alt"></i>
+            </button>
+            <button class="footer-action-button">
+                <span class="feedback-badge">Feedback on New UI</span>
+            </button>
+            <button class="footer-action-button">
+                Ask Zia
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-clipboard"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-bell"></i>
+                <span class="badge">1</span>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-question-circle"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+</html>
+

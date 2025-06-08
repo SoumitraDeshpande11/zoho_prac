@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Reports - Zoho CRM Clone</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/layout-fix.css">
+    <link rel="stylesheet" href="../../css/components/navbar.css">
+    <link rel="stylesheet" href="../../css/components/dropdown.css">
+    <link rel="stylesheet" href="../../css/components/search.css">
+    <link rel="stylesheet" href="../../css/components/sidebar.css">
+    <link rel="stylesheet" href="../../css/components/topbar.css">
+    <link rel="stylesheet" href="../../css/components/cards.css">
+    <link rel="stylesheet" href="../../css/components/tables.css">
+    <link rel="stylesheet" href="../../css/components/buttons.css">
+    <link rel="stylesheet" href="../../css/components/forms.css">
+    <link rel="stylesheet" href="../../css/components/footer.css">
+    <link rel="stylesheet" href="../../css/components/modals.css">
+    <link rel="stylesheet" href="../../css/pages/reports.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar will be loaded here by JavaScript -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="https://www.zohowebstatic.com/sites/default/files/ogimage/crm-logo.png" alt="Zoho CRM Logo">
+                <span>Modules</span>
+            </div>
+            <div class="sidebar-search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="sidebar-menu">
+                <ul class="sidebar-menu-items">
+                    <li class="sidebar-menu-item">
+                        <a href="../../index.html">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../leads.html">
+                            <i class="fas fa-user-tie"></i>
+                            Leads
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../contacts.html">
+                            <i class="fas fa-address-book"></i>
+                            Contacts
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../accounts.html">
+                            <i class="fas fa-building"></i>
+                            Accounts
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../deals.html">
+                            <i class="fas fa-handshake"></i>
+                            Deals
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../tasks.html">
+                            <i class="fas fa-tasks"></i>
+                            Tasks
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../meetings.html">
+                            <i class="fas fa-calendar-alt"></i>
+                            Meetings
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../calls.html">
+                            <i class="fas fa-phone"></i>
+                            Calls
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item active">
+                        <a href="../reports.html">
+                            <i class="fas fa-chart-bar"></i>
+                            Reports
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../dashboards.html">
+                            <i class="fas fa-tachometer-alt"></i>
+                            Dashboards
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item">
+                        <a href="../marketplace.html">
+                            <i class="fas fa-store-alt"></i>
+                            Marketplace
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-footer">
+                <div class="user-avatar">SD</div>
+                <div class="user-info">
+                    <div class="user-name">CRM Teamspace</div>
+                    <div class="user-role">Administrator</div>
+                </div>
+                <div class="dropdown-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Topbar -->
+            <header class="topbar">
+                <div class="topbar-left">
+                    <h1 class="topbar-title">All Reports</h1>
+                    <div class="topbar-actions">
+                        <button class="btn btn-outline-secondary">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle">
+                                Export <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Export to PDF</a>
+                                <a href="#" class="dropdown-item">Export to Excel</a>
+                                <a href="#" class="dropdown-item">Export to CSV</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbar-right">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-plus"></i>
+                        Create Report
+                    </button>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="content-wrapper">
+                <!-- Reports Navigation -->
+                <div class="reports-nav">
+                    <div class="nav-tabs">
+                        <a href="all-reports.html" class="nav-tab active">
+                            <i class="fas fa-list"></i>
+                            All Reports
+                        </a>
+                        <a href="my-reports.html" class="nav-tab">
+                            <i class="fas fa-user-chart"></i>
+                            My Reports
+                        </a>
+                        <a href="favorites.html" class="nav-tab">
+                            <i class="fas fa-star"></i>
+                            Favorites
+                        </a>
+                        <a href="shared.html" class="nav-tab">
+                            <i class="fas fa-share"></i>
+                            Shared
+                        </a>
+                    </div>
+                    <div class="nav-actions">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search reports..." id="report-search">
+                        </div>
+                        <div class="filter-dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle">
+                                <i class="fas fa-filter"></i>
+                                Filter
+                            </button>
+                            <div class="dropdown-menu">
+                                <div class="filter-section">
+                                    <h6>Report Type</h6>
+                                    <label><input type="checkbox" checked> Sales Reports</label>
+                                    <label><input type="checkbox" checked> Activity Reports</label>
+                                    <label><input type="checkbox" checked> Marketing Reports</label>
+                                    <label><input type="checkbox" checked> Custom Reports</label>
+                                </div>
+                                <div class="filter-section">
+                                    <h6>Date Range</h6>
+                                    <label><input type="radio" name="date" checked> Last 7 days</label>
+                                    <label><input type="radio" name="date"> Last 30 days</label>
+                                    <label><input type="radio" name="date"> Last 90 days</label>
+                                    <label><input type="radio" name="date"> Custom Range</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-toggle">
+                            <button class="view-btn active" data-view="grid">
+                                <i class="fas fa-th"></i>
+                            </button>
+                            <button class="view-btn" data-view="list">
+                                <i class="fas fa-list"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reports Grid -->
+                <div class="reports-container" id="reports-container">
+                    <!-- Sales Reports Section -->
+                    <div class="report-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-chart-line"></i>
+                            Sales Reports
+                        </h3>
+                        <div class="reports-grid">
+                            <div class="report-card">
+                                <div class="report-header">
+                                    <div class="report-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div class="report-actions">
+                                        <button class="btn-icon" title="Favorite">
+                                            <i class="far fa-star"></i>
+                                        </button>
+                                        <button class="btn-icon" title="More options">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="report-content">
+                                    <h4 class="report-title">Sales Performance Summary</h4>
+                                    <p class="report-description">Comprehensive overview of sales team performance with revenue trends and goal achievements.</p>
+                                    <div class="report-meta">
+                                        <span class="report-type">Sales Report</span>
+                                        <span class="report-date">Updated 2 hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="report-footer">
+                                    <div class="report-stats">
+                                        <span class="stat">
+                                            <i class="fas fa-eye"></i>
+                                            245 views
+                                        </span>
+                                        <span class="stat">
+                                            <i class="fas fa-download"></i>
+                                            12 downloads
+                                        </span>
+                                    </div>
+                                    <button class="btn btn-sm btn-primary">View Report</button>
+                                </div>
+                            </div>
+
+                            <div class="report-card">
+                                <div class="report-header">
+                                    <div class="report-icon">
+                                        <i class="fas fa-funnel-dollar"></i>
+                                    </div>
+                                    <div class="report-actions">
+                                        <button class="btn-icon active" title="Favorite">
+                                            <i class="fas fa-star"></i>
+                                        </button>
+                                        <button class="btn-icon" title="More options">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="report-content">
+                                    <h4 class="report-title">Sales Funnel Analysis</h4>
+                                    <p class="report-description">Detailed analysis of sales pipeline with conversion rates and bottleneck identification.</p>
+                                    <div class="report-meta">
+                                        <span class="report-type">Sales Report</span>
+                                        <span class="report-date">Updated 5 hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="report-footer">
+                                    <div class="report-stats">
+                                        <span class="stat">
+                                            <i class="fas fa-eye"></i>
+                                            189 views
+                                        </span>
+                                        <span class="stat">
+                                            <i class="fas fa-download"></i>
+                                            8 downloads
+                                        </span>
+                                    </div>
+                                    <button class="btn btn-sm btn-primary">View Report</button>
+                                </div>
+                            </div>
+
+                            <div class="report-card">
+                                <div class="report-header">
+                                    <div class="report-icon">
+                                        <i class="fas fa-trophy"></i>
+                                    </div>
+                                    <div class="report-actions">
+                                        <button class="btn-icon" title="Favorite">
+                                            <i class="far fa-star"></i>
+                                        </button>
+                                        <button class="btn-icon" title="More options">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="report-content">
+                                    <h4 class="report-title">Top Performers Report</h4>
+                                    <p class="report-description">Recognition report highlighting top sales performers with detailed metrics and achievements.</p>
+                                    <div class="report-meta">
+                                        <span class="report-type">Sales Report</span>
+                                        <span class="report-date">Updated 1 day ago</span>
+                                    </div>
+                                </div>
+                                <div class="report-footer">
+                                    <div class="report-stats">
+                                        <span class="stat">
+                                            <i class="fas fa-eye"></i>
+                                            156 views
+                                        </span>
+                                        <span class="stat">
+                                            <i class="fas fa-download"></i>
+                                            25 downloads
+                                        </span>
+                                    </div>
+                                    <button class="btn btn-sm btn-primary">View Report</button>
+                                </div>
+                            </div>
+
+                            <div class="report-card">
+                                <div class="report-header">
+                                    <div class="report-icon">
+                                        <i class="fas fa-dollar-sign"></i>
+                                    </div>
+                                    <div class="report-actions">
+                                        <button class="btn-icon" title="Favorite">
+                                            <i class="far fa-star"></i>
+                                        </button>
+                                        <button class="btn-icon" title="More options">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="report-content">
+                                    <h4 class="report-title">Revenue Trends</h4>
+                                    <p class="report-description">Monthly and quarterly revenue analysis with growth predictions and seasonal insights.</p>
+                                    <div class="report-meta">
+                                        <span class="report-type">Sales Report</span>
+                                        <span class="report-date">Updated 3 days ago</span>
+                                    </div>
+                                </div>
+                                <div class="report-footer">
+                                    <div class="report-stats">
+                                        <span class="stat">
+                                            <i class="fas fa-eye"></i>
+                                            298 views
+                                        </span>
+                                        <span class="stat">
+                                            <i class="fas fa-download"></i>
+                                            15 downloads
+                                        </span>
+                                    </div>
+                                    <button class="btn btn-sm btn-primary">View Report</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity Reports Section -->
+                    <div class="report-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-chart-pie"></i>
+                            Activity Reports
+                        </h3>
+                        <div class="reports-grid">
+                            <div class="report-card">
+                                <div class="report-header">
+                                    <div class="report-icon">
+                                        <i class="fas fa-tasks"></i>
+                                    </div>
+                                    <div class="report-actions">
+                                        <button class="btn-icon" title="Favorite">
+                                            <i class="far fa-star"></i>
+                                        </button>
+                                        <button class="btn-icon" title="More options">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="report-content">
+                                    <h4 class="report-title">Task Completion Analysis</h4>
+                                    <p class="report-description">Track task completion rates, overdue tasks, and team productivity metrics.</p>
+                                    <div class="report-meta">
+                                        <span class="report-type">Activity Report</span>
+                                        <span class="report-date">Updated 4 hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="report-footer">
+                                    <div class="report-stats">
+                                        <span class="stat">
+                                            <i class="fas fa-eye"></i>
+                                            167 views
+                                        </span>
+                                        <span class="stat">
+                                            <i class="fas fa-download"></i>
+                                            9 downloads
+                                        </span>
+                                    </div>
+                                    <button class="btn btn-sm btn-primary">View Report</button>
+                                </div>
+                            </div>
+
+                            <div class="report-card">
+                                <div class="report-header">
+                                    <div class="report-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="report-actions">
+                                        <button class="btn-icon" title="Favorite">
+                                            <i class="far fa-star"></i>
+                                        </button>
+                                        <button class="btn-icon" title="More options">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="report-content">
+                                    <h4 class="report-title">Call Activity Summary</h4>
+                                    <p class="report-description">Comprehensive call logs with duration, outcomes, and follow-up requirements.</p>
+                                    <div class="report-meta">
+                                        <span class="report-type">Activity Report</span>
+                                        <span class="report-date">Updated 6 hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="report-footer">
+                                    <div class="report-stats">
+                                        <span class="stat">
+                                            <i class="fas fa-eye"></i>
+                                            134 views
+                                        </span>
+                                        <span class="stat">
+                                            <i class="fas fa-download"></i>
+                                            7 downloads
+                                        </span>
+                                    </div>
+                                    <button class="btn btn-sm btn-primary">View Report</button>
+                                </div>
+                            </div>
+
+                            <div class="report-card">
+                                <div class="report-header">
+                                    <div class="report-icon">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                    <div class="report-actions">
+                                        <button class="btn-icon active" title="Favorite">
+                                            <i class="fas fa-star"></i>
+                                        </button>
+                                        <button class="btn-icon" title="More options">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="report-content">
+                                    <h4 class="report-title">Meeting Effectiveness</h4>
+                                    <p class="report-description">Analysis of meeting outcomes, attendance rates, and follow-up action completion.</p>
+                                    <div class="report-meta">
+                                        <span class="report-type">Activity Report</span>
+                                        <span class="report-date">Updated 1 day ago</span>
+                                    </div>
+                                </div>
+                                <div class="report-footer">
+                                    <div class="report-stats">
+                                        <span class="stat">
+                                            <i class="fas fa-eye"></i>
+                                            98 views
+                                        </span>
+                                        <span class="stat">
+                                            <i class="fas fa-download"></i>
+                                            14 downloads
+                                        </span>
+                                    </div>
+                                    <button class="btn btn-sm btn-primary">View Report</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Marketing Reports Section -->
+                    <div class="report-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-chart-area"></i>
+                            Marketing Reports
+                        </h3>
+                        <div class="reports-grid">
+                            <div class="report-card">
+                                <div class="report-header">
+                                    <div class="report-icon">
+                                        <i class="fas fa-bullhorn"></i>
+                                    </div>
+                                    <div class="report-actions">
+                                        <button class="btn-icon" title="Favorite">
+                                            <i class="far fa-star"></i>
+                                        </button>
+                                        <button class="btn-icon" title="More options">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="report-content">
+                                    <h4 class="report-title">Campaign Performance</h4>
+                                    <p class="report-description">Detailed analysis of marketing campaign effectiveness with ROI and conversion metrics.</p>
+                                    <div class="report-meta">
+                                        <span class="report-type">Marketing Report</span>
+                                        <span class="report-date">Updated 3 hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="report-footer">
+                                    <div class="report-stats">
+                                        <span class="stat">
+                                            <i class="fas fa-eye"></i>
+                                            223 views
+                                        </span>
+                                        <span class="stat">
+                                            <i class="fas fa-download"></i>
+                                            18 downloads
+                                        </span>
+                                    </div>
+                                    <button class="btn btn-sm btn-primary">View Report</button>
+                                </div>
+                            </div>
+
+                            <div class="report-card">
+                                <div class="report-header">
+                                    <div class="report-icon">
+                                        <i class="fas fa-user-plus"></i>
+                                    </div>
+                                    <div class="report-actions">
+                                        <button class="btn-icon" title="Favorite">
+                                            <i class="far fa-star"></i>
+                                        </button>
+                                        <button class="btn-icon" title="More options">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="report-content">
+                                    <h4 class="report-title">Lead Generation Report</h4>
+                                    <p class="report-description">Track lead sources, quality scores, and conversion rates across different channels.</p>
+                                    <div class="report-meta">
+                                        <span class="report-type">Marketing Report</span>
+                                        <span class="report-date">Updated 5 hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="report-footer">
+                                    <div class="report-stats">
+                                        <span class="stat">
+                                            <i class="fas fa-eye"></i>
+                                            187 views
+                                        </span>
+                                        <span class="stat">
+                                            <i class="fas fa-download"></i>
+                                            11 downloads
+                                        </span>
+                                    </div>
+                                    <button class="btn btn-sm btn-primary">View Report</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Custom Reports Section -->
+                    <div class="report-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-cogs"></i>
+                            Custom Reports
+                        </h3>
+                        <div class="reports-grid">
+                            <div class="report-card">
+                                <div class="report-header">
+                                    <div class="report-icon">
+                                        <i class="fas fa-chart-bar"></i>
+                                    </div>
+                                    <div class="report-actions">
+                                        <button class="btn-icon active" title="Favorite">
+                                            <i class="fas fa-star"></i>
+                                        </button>
+                                        <button class="btn-icon" title="More options">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="report-content">
+                                    <h4 class="report-title">Custom Dashboard Report</h4>
+                                    <p class="report-description">Personalized report combining multiple data sources for comprehensive business insights.</p>
+                                    <div class="report-meta">
+                                        <span class="report-type">Custom Report</span>
+                                        <span class="report-date">Updated 2 days ago</span>
+                                    </div>
+                                </div>
+                                <div class="report-footer">
+                                    <div class="report-stats">
+                                        <span class="stat">
+                                            <i class="fas fa-eye"></i>
+                                            89 views
+                                        </span>
+                                        <span class="stat">
+                                            <i class="fas fa-download"></i>
+                                            6 downloads
+                                        </span>
+                                    </div>
+                                    <button class="btn btn-sm btn-primary">View Report</button>
+                                </div>
+                            </div>
+
+                            <div class="report-card new-report">
+                                <div class="new-report-content">
+                                    <div class="new-report-icon">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                    <h4>Create New Report</h4>
+                                    <p>Build a custom report with your specific requirements</p>
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-plus"></i>
+                                        Create Report
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="smart-chat">
+            Here is your Smart Chat (Ctrl+Space)
+        </div>
+        <div class="footer-actions">
+            <button class="footer-action-button">
+                <i class="fas fa-comment-alt"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-sync-alt"></i>
+            </button>
+            <button class="footer-action-button">
+                <span class="feedback-badge">Feedback on New UI</span>
+            </button>
+            <button class="footer-action-button">
+                Ask Zia
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-clipboard"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-bell"></i>
+                <span class="badge">1</span>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-question-circle"></i>
+            </button>
+            <button class="footer-action-button">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+    <script src="../../js/navbar.js"></script>
+    <script src="../../js/modals.js"></script>
+    <script>
+        // Reports page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // View toggle functionality
+            const viewButtons = document.querySelectorAll('.view-btn');
+            const reportsContainer = document.getElementById('reports-container');
+            
+            viewButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    viewButtons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const view = this.dataset.view;
+                    reportsContainer.className = `reports-container ${view}-view`;
+                });
+            });
+
+            // Search functionality
+            const searchInput = document.getElementById('report-search');
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                const reportCards = document.querySelectorAll('.report-card');
+                
+                reportCards.forEach(card => {
+                    const title = card.querySelector('.report-title')?.textContent.toLowerCase();
+                    const description = card.querySelector('.report-description')?.textContent.toLowerCase();
+                    
+                    if (title?.includes(searchTerm) || description?.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+
+            // Favorite functionality
+            const favoriteButtons = document.querySelectorAll('.btn-icon');
+            favoriteButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const icon = this.querySelector('i');
+                    if (icon.classList.contains('far')) {
+                        icon.classList.remove('far');
+                        icon.classList.add('fas');
+                        this.classList.add('active');
+                    } else if (icon.classList.contains('fas') && icon.classList.contains('fa-star')) {
+                        icon.classList.remove('fas');
+                        icon.classList.add('far');
+                        this.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
